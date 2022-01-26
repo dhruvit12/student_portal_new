@@ -1,0 +1,49 @@
+
+  @media (min-width: 480px) and (max-width: 767px) {
+  .mobile_assignment{
+  display:none;
+}
+#activity_button{
+  margin-left:60px;
+  margin-top:10px;
+  width:164px;
+}
+  }
+  
+  
+  @media (min-width: 320px) and (max-width: 479px) {
+ .mobile_assignment{
+  display:none;
+}
+#activity_button{
+  margin-left:60px;
+  margin-top:10px;
+  width:164px;
+}
+
+  }
+  @media screen and (max-width: 866px) { 
+    .course_card_drop_down
+    {
+      display: none !important;
+    }
+.course_card_drop_down_mobile{
+  display: block !important;
+}
+.mobile_drop_down{
+text-align: -webkit-center;
+}
+
+}select.course_dropdown_list {
+    width: 73%;
+    border: none;
+    height: 30px;
+    box-shadow: 0px -2px 1px 0px rgb(0 0 0 / 10%), 4px 6px 0px -4px rgb(0 0 0 / 6%);
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: flex-end;
+    align-items: center !important;
+    color: gray;
+    font-size: 13px;
+    margin-bottom: -48px;
+}

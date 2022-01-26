@@ -1,0 +1,34 @@
+        .anzar-nav-li{
+               background:#2f3c4e; 
+               font-size: 14px;
+               letter-spacing: .5px;
+               padding-bottom: 8px;
+               padding-top: 8px;
+               text-transform: capitalize;
+               font-weight: 600;
+               color: rgba(255,255,255,0.85);
+               font-family: Nunito;
+               height:60px; 
+            }
+            .anzar-nav-li-black{
+               background:white; 
+               font-size: 14px;
+               letter-spacing: .5px;
+               padding-bottom: 8px;
+               padding-top: 8px;
+               text-transform: capitalize;
+               font-weight: 600;
+               color: #2f3c4e;
+               font-family: Nunito;
+               height:60px; 
+            }
+            .arrow-li{
+               border-top: 30px solid transparent;
+               border-bottom: 30px solid transparent;                  
+               border-left: 30px solid #2f3c4e;
+            }
+            .arrow-li-black{
+               border-top: 30px solid #2f3c4e;
+               border-bottom: 30px solid #2f3c4e;                  
+               border-left: 30px solid #2f3c4e;
+            }

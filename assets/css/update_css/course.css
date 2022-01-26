@@ -1,0 +1,132 @@
+.course_header{
+    height: 62px;
+    width:1000px;
+    border-radius: 14px;
+    margin-top:-15px;
+    box-shadow:0px 3px 6px 0px rgb(0 0 0 / 10%);
+		}
+        #session{
+            box-shadow: 10px  -0px 1px -0.5px #f0750b,2px 1px 2px 3px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+            border-radius: 26px;
+            height: 120px;
+            width:1120px;
+            margin-left: -20px;
+         }
+         #course_card
+         {
+           font-size: 40px;
+           color:#535252;
+           font-weight: bold;
+           margin-left: -20px;
+         }
+        
+         #icon{
+           margin-left: -50px;
+           margin-top: 5px;
+         }
+         #content{
+           margin-left: -30px;
+         }
+         #sub-contect
+         {
+           font-size:13px;
+         }
+         #course_button
+         {
+           background-color: #26266C;
+           opacity:100%;
+           color:#ffffff;
+           font-family: 'Poppins', sans-serif;
+           font-size: 11px;;
+           border-radius: 7px;
+           height: 29px;
+           box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.1);
+           border:none;
+           box-shadow: 2px -0.4px 1px -0.5px #E46F0E, 2px 1px 2px 3px rgb(0 0 0 / 10%);
+           margin-top: 30px ;
+           width:140px;
+         }
+         #header-text
+         {
+          margin-top: 10px; 
+          margin-left: 40px;
+         }
+         #header-text a
+         {
+           color:#BEB7B7;
+           text-decoration: none;
+         }
+         /*#header-text a:hover
+         {
+            border-bottom: 5px solid #E46F0A;
+            width:45px;
+            margin-top: 30px !important;
+            border-radius:5px;
+         }*/
+         #line
+         {
+            border-bottom: 5px solid #E46F0A;
+            width:45px;
+            border-radius: 100px;
+            margin-left: 25px;
+            margin-top: 15px;
+           
+         }
+         #line_last
+         {
+            border-bottom: 5px solid #E46F0A;
+            width:45px;
+            border-radius: 100px;
+            margin-left: -5px;
+            margin-top: 7px;
+         }
+         .line a:hover {
+            border-bottom: 5px solid #E46F0A;
+            width:45px;
+            border-radius: 20px;
+            margin-left: 25px;
+            margin-top: 5px;
+         }
+         .menus
+         {
+           color:#000000;
+         }
+         
+         button#dropdownMenuButton {
+             width: 75%;
+             height: 42px;
+             color: black;
+             background: white !important;
+             border: none;
+             padding: 9px;
+             color: #9f9696;
+             font-size: 20px;
+             box-shadow: -1px 6px 9px 3px rgb(0 0 0 / 10%);
+             border-radius: 31px;
+             padding: 2px;
+             margin-top: 30px;
+         }
+         .dropdown-toggle::after {
+             display: inline-block;
+             float: right;
+             margin-left: .255em;
+             vertical-align: .255em;
+             content: "";
+             border-top: .3em solid;
+             border-right: .3em solid transparent;
+             border-bottom: 0;
+             border-left: .3em solid transparent;
+             margin-top: 1%;
+             margin-right: 20px;
+         }
+         
+.dropdown-menu show {
+             position: absolute;
+             transform: translate3d(151px, 46px, 0px);
+             top: 0px;
+             left: 0px;
+             will-change: transform;
+             width: 75%;
+             font-size: 17px;
+               }

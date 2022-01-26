@@ -1,0 +1,51 @@
+#header{
+	
+	font-size:20px;
+	border-color: #707070;
+    color:#26266C;
+}
+#navbar
+{
+	 box-shadow:-2px 0.4px 3px 0px #00000f;
+	 height: auto;
+
+}
+#playclass_class
+{
+font-family: Poppins;
+font-size: 50px;
+color:#26266C;
+
+}
+#second2
+{
+	font-size:18px;
+	font-family: Poppins;
+	color:#949393;
+}
+#intro
+{	
+    margin-top:-100px;
+    font-size:28px;
+	font-family: Poppins;
+	color:#5A5858;
+
+}
+#intro1
+{
+    font-size:15px;
+	font-family: Poppins;
+    color:#5A5858;
+}
+#intro2
+{
+    font-size:15px;
+	font-family: Poppins;
+    color:#5A5858;
+}
+#intro3
+{
+    font-size:29px;
+	font-family: Poppins;
+    color:#5A5858;
+}

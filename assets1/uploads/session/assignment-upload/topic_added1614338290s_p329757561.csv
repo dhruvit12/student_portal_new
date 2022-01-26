@@ -1,0 +1,2 @@
+mcq_question,question_type,option_a,option_b,option_c,option_d,correct_option,correct_answer_description,answer_hint,marks,note
+"What will be the output of the following Python code? x = 50 def func(x):     print(&#039;x is&#039;, x)     x = 2     print(&#039;Changed local x to&#039;, x) func(x) print(&#039;x is now&#039;, x) )",1,x is 50 Changed global x to 2 Value of x is 50,x is 50 Changed global x to 2 Value of x is 2,x is 50 Changed global x to 50 Value of x is 50,None of the mentioned,c,,,1,
