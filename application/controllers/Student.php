@@ -13,7 +13,6 @@ class Student extends CI_Controller {
 	{
 			$this->load->view('template/header');
 			$this->load->view('template/sidebar');
-			$this->load->view('template/top_navigation');
 			$this->db->where('id',$_SESSION['ftip69_uid']);
 		    $data['student_id']=$this->db->get('user2')->result();
 			if($data['student_id'])

@@ -373,9 +373,8 @@
                                                 
                                                 </p>
                                                 
-                                                <div class="collapse" id="myCollapse<?php echo $kp;?>" style="margin-top: -30px; padding: 20px;">
-                                                <br>
-                                                
+                                                <div class="collapse" id="myCollapse<?php echo $kp;?>" style="margin-top: -10px !important; margin-left: 100px;">
+                                               
                                                 <div  style="margin-left:-50px;" >
                                                    <div class="jumbotron" style="height:auto;background-color:white;padding-top:0px;padding-bottom:0px;">
                                                       <span style="font-size:10px;color: #858585;margin-left:-50px">Course: <?php echo $course_name;?></span><br>
@@ -433,15 +432,16 @@
                                                 </div>
                                              </div>
                                              <div class="col-lg-1 col-md-1 col-sm-1 col-2 mt-4">
-                                             <div class="">
-                                             <a href="#myCollapse<?php echo  $kp;?>" data-bs-toggle="collapse" style="font-size:24px;color:gray;" >
+                                            
+                                             <a href="#myCollapse<?php echo  $kp;?>" data-toggle="collapse" style="font-size:24px;color:gray;" data-target="#myCollapse<?php echo  $kp;?>">
                                                 <i class="fas fa-angle-down" ></i>
                                                 </a>
-                                              </div>
+                                                
                                              </div>
                                           </div>
                                           </div>
                                           <br>
+ 
                                        <?php
                                              }
                                              }
@@ -460,6 +460,7 @@
    </div>
    </div>
    </div>
+
    <script src="<?php echo base_url()?>assets/js/student-dashboard-modal-create.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
    <div class="modal fade" id="assignment_download_modal">
