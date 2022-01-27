@@ -43,7 +43,7 @@ box-shadow: 8px -0.4px 1px -0.5px #E46F0E, 0px 3px 6px rgb(0 0 0 / 16%);
 }
 .tablinks
 {
-  font-size: 22px !important;
+  font-size: 25px !important;
   color:#B1B1B1 !important;
 }
 
@@ -140,8 +140,6 @@ a#menu_course {
 {
   box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
   color:#ffffff !important;
-  
-
   border-radius: 18px;
   background-color: #26266c;
   color:#ffffff;
@@ -158,6 +156,7 @@ hr:not([size]) {
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff;
     border-bottom: 4px solid #26266C;
+
 }
 .customScroll1
 {

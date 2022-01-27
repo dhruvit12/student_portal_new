@@ -21,12 +21,13 @@
          }
          /*dashboard */
          .header_text1{
-         font:bold !important;
+          font-weight: 500;
+          margin-top: 50px !important;
          }
          .header_text2
          {
          display: block !important;
-         font-weight:500;
+         font-weight:500 !important;
          }
          .header_text3
          {
@@ -35,13 +36,18 @@
          display: block !important;
          color: #FFFFFF;
          }
+         a{
+          width: 204px;
+         }
          a#menu_dashboard.nav-link.menu-active {
          box-shadow: 4px -0.4px 1px -0.5px #e46f0e, 2px 1px 2px 3px rgb(0 0 0 / 10%) !important;
          color: white !important;
+         width: 204px;
          }
          a#menu_course.nav-link.menu-active {
          box-shadow: 4px -0.4px 1px -0.5px #e46f0e, 2px 1px 2px 3px rgb(0 0 0 / 10%) !important;
          color: white !important;
+         width: 204px;
          }a#menu_course.nav-link.menu-active {
          box-shadow: 4px -0.4px 1px -0.5px #e46f0e, 2px 1px 2px 3px rgb(0 0 0 / 10%) !important;
          color: white !important;
@@ -64,12 +70,15 @@
          background-color: #26266C !important;
          box-shadow: 4px -0.4px 1px -0.5px #e46f0e, 2px 1px 2px 3px rgb(0 0 0 / 10%);
          }
-         li.nav-item :hover{
+         li.nav-item_mobile :hover{
+         }  
+          li.nav-item :hover{
          /* color: red; */
-         background: #26266C;
-         background-color: #26266C !important;
+         /*background: #26266C;*/
+         /*background-color: #26266C !important;
          box-shadow: 4px -0.4px 1px -0.5px #e46f0e, 2px 1px 2px 3px rgb(0 0 0 / 10%);
          color:#ffffff !important;
+         width: 204px;*/
          /*box-shadow:0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);*/
          }
          a.nav-link.text-white{
@@ -93,7 +102,7 @@
          box-shadow: 8px 0.4px 1px -0.6px #e46f0e, 0px 3px 6px rgb(0 0 0 / 16%);
          height: 155px;
          background-color: #26266C;
-         max-width: 90%;
+         max-width: 97%;
          }
          .dashboard_header_content
          {
@@ -423,6 +432,70 @@
          width:180px;
          display:none;
          }
+         /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+         @media (min-width: 1281px) {
+           nav{
+              display: none !important;
+            }
+            #completed_open_dropdown_icon
+            {
+              display: none !important;
+
+            }
+  /* CSS */
+  
+        }
+
+        /* 
+          ##Device = Laptops, Desktops
+          ##Screen = B/w 1025px to 1280px
+        */
+
+        @media (min-width: 1025px) and (max-width: 1280px) {
+          
+         nav{
+              display: none !important;
+            }
+            #completed_open_dropdown_icon
+            {
+              display: none !important;
+              
+            }
+          
+        }
+
+        /* 
+          ##Device = Tablets, Ipads (portrait)
+          ##Screen = B/w 768px to 1024px
+        */
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+          
+          nav{
+              display: none !important;
+            }
+            #completed_open_dropdown_icon
+            {
+              display: none !important;
+              
+            }
+          
+        }
+
+        /* 
+          ##Device = Tablets, Ipads (landscape)
+          ##Screen = B/w 768px to 1024px
+        */
+
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+          
+          /* CSS */
+          
+        }
          @media (min-width: 480px) and (max-width: 767px) {
          .mobile_assignment{
          display:none;
@@ -432,6 +505,34 @@
          margin-top:10px;
          width:164px;
          }
+           .dashboard_header
+         {
+         max-height: 100px;
+         border-radius: 10px;
+         }
+         .logo
+         {
+          margin-top: -1px;
+          max-height: 120px;
+         }
+         .header_text1
+         {
+          font-size: 10px !important;
+          margin-left: -10px;
+         }
+         .header_text2
+         {
+          font-size:9.2px !important;
+          margin-left: -10px; 
+         }
+         .header_text3
+         {
+          font-size:8px !important;
+          margin-left: -10px; 
+         }
+          #navbarBlur{
+              display:block !important;
+          }
          }
          @media (min-width: 320px) and (max-width: 479px) {
          .mobile_assignment{
@@ -442,7 +543,133 @@
          margin-top:10px;
          width:164px;
          }
+          .dashboard_header
+         {
+         max-height: 100px;
+         border-radius: 13px !important;
+         box-shadow: 3px 0.4px 1px -0.6px #e46f0e, 0px 3px 6px rgb(0 0 0 / 16%);
+         }
+         .logo
+         {
+          margin-top: -1px;
+          max-height: 120px;
+          margin-left: -15px;
+          max-width: 120px;
+         }
+         .header_text_center
+         {
+          margin-top: 18px !important ;
+          margin-left: 1px !important;
+         }
+         .header_text1
+         {
+          font-size: 8px !important;
+          font-weight: 500;
 
+        }
+         .header_text2
+         {
+          font-size:10px !important;
+          font-weight: 500;
+         }
+         .header_text3
+         {
+          font-size:8px !important;
+          margin-top: 3px;
+         }
+         .header_text4
+          {
+            font-size: 17px !important;
+            margin-left: -40px !important;
+            margin-top: 40px !important;
+          }
+          #activitys
+          {
+            font-size:30px !important;
+            font-weight: 500;
+          }
+          #all-link-1
+          {
+            margin-left: 12px !important;
+            font-size:17px !important;
+            color: #495057 !important;
+            background-color: #fff;
+            border-color: #dee2e6 #dee2e6 #fff;
+            border-bottom: 3px solid #26266C;
+       
+          }
+          #video-link-1
+          {
+            font-size:17px !important;
+            color: #495057 !important;
+            background-color: #fff;
+            border-color: #dee2e6 #dee2e6 #fff;
+            border-bottom: 3px solid #26266C;
+          }
+          #navbar
+          {
+            box-shadow: 2px 2px;
+          }
+          #navbarBlur{
+              display:block !important;
+          }
+          .mobilein_hide
+          {
+            display: none;
+          }
+          .upcoming_mobilein_hide
+          {
+            display: none;
+          }
+          #completed_icon
+          {
+           height: 50px !important;
+           width: auto;
+           margin-left: -20px;
+          }
+          #completed_session
+          {
+            font-size:13px !important; 
+            margin-left: -25px !important;
+          }
+          #completed_starts_at
+          {
+            font-size:11px !important; 
+         margin-left: -25px !important;
+          }
+          #completed_course
+          {
+            margin-top:-20px;
+            font-size:11px !important;
+            margin-left: -25px !important; 
+          }
+          /*//upcoming csss*/
+          #upcoming_icon
+          {
+           height: 50px !important;
+           width: auto;
+           margin-left: -20px;
+          }
+          #upcoming_session
+          {
+            font-size:13px !important; 
+            margin-left: -25px !important;
+          }
+          #upcoming_start_at
+          {
+            font-size:11px !important; 
+         margin-left: -25px !important;
+          }
+          #upcoming_course
+          {
+            margin-top:-20px;
+            font-size:11px !important;
+            margin-left: -25px !important; 
+          }
+          #mobile_view_activity_position
+          {
+            margin-top: 15px !important; 
+          }
          }
          @media screen and (max-width: 1500px) { 
          .course_header_new
@@ -488,21 +715,18 @@
        document.getElementById('sidebar_icon_'+get_icon_number).style.color='#808080';
       }
    </script>
-   <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
-      <div class="container-fluid py-1 px-3">
-         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
-            <ul class="navbar-nav  justify-content-end">
-               <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
-                  <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+   <nav class="navbar" id="navbarBlur" navbar-scroll="true">
+               <li class="nav-item_mobile d-xl-none ps-3 d-flex ">
+                  <a href="javascript:;" class="nav-item_mobile text-body p-0" id="iconNavbarSidenav">
                      <div class="sidenav-toggler-inner">
                         <i class="sidenav-toggler-line"></i>
                         <i class="sidenav-toggler-line"></i> 
                         <i class="sidenav-toggler-line"></i>
                      </div>
+                      <div style="margin-left:130px; margin-top: -20px;">
+                         <img src="<?php echo base_url();?>assets/images/logo/logo.png" class="navbar-brand-img  " alt="main_logo" style="width:80px;height:30px">
+                      </div>
                   </a>
                </li>
-            </ul>
-         </div>
-      </div>
    </nav>
    <!-- Navbar -->

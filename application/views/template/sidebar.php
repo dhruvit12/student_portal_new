@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main" style="margin-top: -60px;">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a  id="menu_dashboard" class="nav-link " href="<?php echo base_url();?>dashboard" style="font-weight: 500;">
+          <a  id="menu_dashboard" class="nav-link " href="<?php echo base_url();?>dashboard" style="font-weight: 500;max-width: 100%">
               <svg id="sidebar_icon_1"  class="icon" style="height:30;width: 30;" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 425.11 413.39" fill="gray">
               <rect x="27.56" y="24.09" width="184.2" height="184.2" rx="42.51"/>
                 <rect x="226.42" y="66.6" width="141.69" height="141.69" rx="32.7"/>
