@@ -34,7 +34,7 @@ header .nav-bar .nav-flex .nav-link:hover{color: #f07e1f;}
 }
 }
 
-.static-content .title{color: #08087b; font-family: 'robotobold'; position: relative; font-size: 22px;padding-bottom: 20px; margin-bottom: 0px; }
+.static-content .title{color: #08087b; font-family: 'Poppins', sans-serif; position: relative; font-size: 22px;padding-bottom: 20px; margin-bottom: 0px; }
 .static-content .title .live-data{background:#f07e1f ;color: #fff;font-size: 12px;bottom:0px; max-width: 120px; width: 100%;padding:3px 10px; text-align: right; position: absolute; right:0px;}
 .static-content .title .live-data i{font-size: 8px; margin-right:5px;}
 .static-content .line{width:90%; background: #08087b; height: 2px;margin-bottom: 20px;}
@@ -63,7 +63,8 @@ header .nav-bar .nav-flex .nav-link:hover{color: #f07e1f;}
     padding-bottom: 2px;
     vertical-align: middle;
 }
-.static-content .line::before{position: absolute;content: ""; height: 5px; background:#f07e1f;right:0; width: 25%;top:0px;}
+
+.static-content .line::before{position: absolute;content: ""; height: 4px; background:#f07e1f;right:0; width: 25%;top:0px;}
 .static-content .static-middle-content h6{color: #08087b; font-family: 'Poppins', sans-serif; margin-bottom: 10px;font-size: 16px; }
 .static-content .static-middle-content p{max-width: 70%; width: 100%;font-size: 14px; color: #08087b; margin-bottom: 0px; }
 
@@ -77,7 +78,7 @@ header .nav-bar .nav-flex .nav-link:hover{color: #f07e1f;}
 .middle-content-static .panel .panel-link.collapsed::before {content:"\f078"; }
 
 .middle-content-static .panel{border-bottom: 1px solid #08087b; margin-bottom: 0px;}
-.middle-content-static .panel .panel-data{font-size: 14px; color: #08087b; margin-bottom: 15px;display: block;}
+.middle-content-static .panel .panel-data{font-size: 14px; color: #373737; margin-bottom: 15px;display: block;}
 
 .middle-content-static .panel:last-child{border-bottom: 0px;}
 .course-content-section{padding:10px 0px 30px;}
@@ -586,9 +587,9 @@ header .D-logo-section{margin-right:0px;}
 .Course-Content .download-bour img {width:17px;margin-right: 7px;}
 .course-content-section{position: relative;}
 .Course-Content .download-bour{}
-.static-content .title{padding-top: 15px;font-size: 16px;}
+.static-content .title{padding-top: 15px;font-size: 16px;width:250px;}
 .static-content .line{position: relative;width: 100%;}
-.static-content .line::before{position: absolute;content: ""; height: 2px; background:#f07e1f;right:0; width: 10%;top:0px;}
+.static-content .line::before{position: absolute;content: ""; height: 4px; background:#f07e1f;right:0; width: 10%;top:0px;}
 .static-content .title .live-data{top:-16px;right:-16px; bottom:0px;max-width:60px; height:25px;}
 .M-logo-section .L-card .logo-menus-icon{ display: none; }
 .M-logo-section .L-card img{/* display: none; */}
