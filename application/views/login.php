@@ -324,8 +324,7 @@
               $is_deleted = $data['is_deleted'];
               $is_disabled = $data['is_disabled'];
   
-              
-  
+               
               if($is_disabled != 1){             
                 if($is_deleted != 1){
   

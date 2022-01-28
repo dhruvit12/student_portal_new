@@ -756,7 +756,52 @@ button.btn.btn-success.button {
     width: 59%!important;
 }
 
+/*course page css*/
+      input[type=checkbox]{
+  height: 20px;
+  visibility: hidden;
+}
 
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 320px;
+  height: 60px;
+  background: #E4E4E4;
+  display: block;
+  border-radius: 15px;
+  position: relative;
+  border-bottom: 20px red;
+ }
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  margin-top: -5px;
+  width: 160px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 15px;
+  transition: 0.9s;
+  box-shadow: 0.2px 3px 3px #808080;
+  border-color: #707070;
+  border-bottom: orange;
+  opacity: 100%;
+
+}
+input:checked + label {
+  /*background: #26266C;*/
+}
+input:checked + label:after {
+  left: calc(100% - 0px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 130px;
+}
 
       </style>
    </head>
