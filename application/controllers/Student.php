@@ -37,6 +37,8 @@ class Student extends CI_Controller {
 					if($course)
 					{
 						 $data['course_name']=$course[0]->name;
+						 $this->session->set_userdata('student_course_name', $course[0]->name);
+
 					}
 					else
 					{

@@ -14,28 +14,28 @@ class Program_flow extends CI_Controller {
 	{
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-      
-		if('Data Science Pro'==$_SESSION['student_course_name'])
+        
+		if('Data Science Pro'==$this->session->userdata('student_course_name'))
 		{
 			$this->load->view('program_flow/data-science-pro-program');
 		}
-		if('AI'==$_SESSION['student_course_name'])
+		if('AI'==$this->session->userdata('student_course_name'))
 		{
 			$this->load->view('program_flow/advance_ai_program');
 		}
-		if('Data Science'==$_SESSION['student_course_name'])
+		if('Data Science'==$this->session->userdata('student_course_name'))
 		{
 			$this->load->view('program_flow/Data-Science-Masters-Program');
 		}
-		if('Business Intelligence'==$_SESSION['student_course_name'])
+		if('Business Intelligence'==$this->session->userdata('student_course_name'))
 		{
 			$this->load->view('program_flow/business_intelligence_program');
 		}
-		if('Digital Marketing'==$_SESSION['student_course_name'])
+		if('Digital Marketing'==$this->session->userdata('student_course_name'))
 		{
 			$this->load->view('program_flow/digital_marketing_with_analytics_program');
 		}
-		if('Data Science Masters'==$_SESSION['student_course_name'])
+		if('Data Science Masters'==$this->session->userdata('student_course_name'))
 		{
 			$this->load->view('program_flow/data_science_with_r_program');
 			$this->load->view('program_flow/data_science_with_python_program');

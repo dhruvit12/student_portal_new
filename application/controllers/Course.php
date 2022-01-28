@@ -12,6 +12,14 @@ class Course extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('template/header');
+		$this->load->view('template/sidebar');
+		$this->load->view('course');
+		$this->load->view('template/footer');
+
+	}
+	public function recording()
+	{
+		$this->load->view('template/header');
 		$this->load->view('template/top_navigation');
 		
 		$this->load->view('template/sidebar');
@@ -62,7 +70,7 @@ class Course extends CI_Controller {
 		{
             $data['student_id']="";
 		}
-	        	$this->load->view('course',$data);
+	        	$this->load->view('recording',$data);
 			    $this->load->view('template/footer');
 	}
 }
