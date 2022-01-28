@@ -1,3 +1,4 @@
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
 <script>
    //menu
  document.getElementById('menu_programflow').classList.add("menu-active");
@@ -5,12 +6,15 @@
  document.getElementById('sidebar_icon_4').style.fill='#E46F0E';
 
 </script>
-<div class="row" style="margin-left:-50px;">
-   <div class="col-lg-12 mt-3 py-5">
-         <div class="text">Course Content</div>
+<div class="container">
+    
+<div class="row" >
+   <div class="col-md-9 mt-3 py-5">
+        <span class="programflow_title">
+              Course Content
+        </span>
     </div>
 </div>
-
 <div class="row" >
    <div class="col-lg-12">
       <div class="mysql-data-section">
@@ -1103,7 +1107,7 @@
                                  <p></p> </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">self</button></span>
                      </div>
                   </div>
                   <?php $i=8;?>
@@ -1219,7 +1223,7 @@
                                  <p></p></div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success" style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success" style="border-radius: 18px">self</button></span>
                      </div>
                   </div>
                   <?php $i=9;?>
@@ -1310,8 +1314,7 @@
             </div>
           </div>
         </div>
-      </div>
-</div>
+     
   <div class="row" >
    <div class="col-lg-12">
       <div class="mysql-data-section">
@@ -1330,7 +1333,7 @@
                                  <p> </p> </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success " style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success " style="border-radius: 18px">self</button></span>
                      </div>
                   </div>
                   <?php $i=13;?>
@@ -1457,7 +1460,7 @@
                                  <p></p> </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">self</button></span>
                      </div>
                   </div>
                   <?php $i=12;?>

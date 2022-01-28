@@ -10,21 +10,31 @@
   content: " - Remember this";
 }
 </style>
-   	<div class="container-fluid">
-        <span class="title_project">
-               Courses
+<script type="text/javascript">
+	function f1
+	{
+
+	}
+</script>
+   	<div class="container-fluid mt-5">
+        <span style="color:#858585;
+         margin-bottom: 30px;
+         font-family: 'Poppins' !important;
+	     font-size: 40px !important;
+	     font-weight: bold;">
+	               Courses
          </span>
      <div class="row  mt-3" >
-     <div class="col-lg-12 ">
+     <div class="col-md-12">
       <input type="checkbox" id="switch" />
       <label for="switch">
         <span class="switch">
-		  <span>Live Course</span>
-		  <span>Self Paced Course</span>
+		  <button class="tablinks" onclick="f1()">Live Course</button>
+		  <button class="tablinks" onclick="f2()">Self Paced Course</button>
         </span>
 	   </label>
       <div class="container" >
-      	<div class="row mt-5">
+      	<div class="row mt-5" id="live">
       		
       		<div class="col-md-4 ">
       	       <div class="card" id="course_card">
@@ -69,4 +79,48 @@
       	</div>
 
           <br>
+          <div class="row mt-5" id="self">
+      		
+      		<div class="col-md-4 ">
+      	       <div class="card" id="course_card">
+		       <img class="card-img-top" src="<?php echo base_url()?>assets/images/student_portal_icon/python-popularity.png" class="img-fluid" alt="course image" >
+		    <div class="container">
+		      <h4 class="card-title">Python</h4>
+		      <p class="card-text" style="color:#858585">Contrary to popular belief, Lorem 
+				Ipsum is not simply random text. 
+				It has roots</p>
+				<span class="pull-right"><i class="fa fa-lock" aria-hidden="true" ></i></span>		      
+		    </div>
+		  </div>
+		  <br>
+      		</div>
+      		<div class="col-md-4 ">
+      	       <div class="card" id="course_card">
+		       <img class="card-img-top" src="<?php echo base_url()?>assets/images/student_portal_icon/python-popularity.png" alt="Card image" style="height: ">
+		    <div class="container">
+		      <h4 class="card-title">Python</h4>
+		      <p class="card-text" style="color:#858585">Contrary to popular belief, Lorem 
+				Ipsum is not simply random text. 
+				It has roots</p>
+				<span class="pull-right"><i class="fa fa-lock" aria-hidden="true" ></i></span>		      
+		    </div>
+		  </div>
+		  <br>
+      		</div>
+
+      		<div class="col-md-4 ">
+      	       <div class="card" id="course_card">
+		       <img class="card-img-top" src="<?php echo base_url()?>assets/images/student_portal_icon/python-popularity.png" alt="Card image" style="height: ">
+		    <div class="container">
+		      <h4 class="card-title">Python</h4>
+		      <p class="card-text" style="color:#858585">Contrary to popular belief, Lorem 
+				Ipsum is not simply random text. 
+				It has roots</p>
+				<span class="pull-right"><i class="fa fa-lock" aria-hidden="true" ></i></span>		      
+		    </div>
+		  </div>
+		
+      		</div>
+      	</div>
+
      </div>

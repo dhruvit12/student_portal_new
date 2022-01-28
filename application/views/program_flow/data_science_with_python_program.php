@@ -1,16 +1,4 @@
-<script>
-   //menu
- document.getElementById('menu_programflow').classList.add("menu-active");
- //icon
- document.getElementById('sidebar_icon_4').style.fill='#E46F0E';
 
-</script>
-<div class="col-md-10 title_Class">
-<div class="row" >
-   <div class="col-lg-12 mt-3 py-5">
-         <div class="title_Class">Course Content</div>
-    </div>
-</div>
 <div class="row" >
    <div class="col-lg-12 ">
       <div class="mysql-data-section">
@@ -30,7 +18,7 @@
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                       <!--  <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span> -->
                      </div>
                   </div>
                   <?php $i=0; ?>
@@ -96,7 +84,7 @@
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                       <!--  <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span> -->
                      </div>
                   </div>
                   <?php $i=1; ?>
@@ -188,7 +176,7 @@ Automobile Case Study</br>
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                       <!--  <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span> -->
                      </div>
                   </div>
                   <?php $i=2;?>

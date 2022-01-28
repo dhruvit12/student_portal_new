@@ -16,8 +16,7 @@
       <link id="pagestyle" href="<?php echo base_url();?>assets/css/material-dashboard.css?v=3.0.0" rel="stylesheet" />
       <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
 
-      <!-- program flow css -->
-
+      <!-- program flow css --> 
       <link rel="icon" type="image/png"   href="<?php echo base_url()?>program_assets/img/fevicon.png">    
       <link rel="stylesheet" href="<?php echo base_url()?>program_assets/mastercss/design.css">
       <script type="text/javascript" src="<?php echo base_url()?>program_assets/masterjs/jquery-1.11.0.min.js"></script>
@@ -52,13 +51,22 @@
          color: white !important;
          width: 204px;
          }
+         a#menu_programflow.nav-link.menu-active {
+         box-shadow: 4px -0.4px 1px -0.5px #e46f0e, 2px 1px 2px 3px rgb(0 0 0 / 10%) !important;
+         color: white !important;
+         width: 204px;
+         }
          a#menu_course.nav-link.menu-active {
          box-shadow: 4px -0.4px 1px -0.5px #e46f0e, 2px 1px 2px 3px rgb(0 0 0 / 10%) !important;
          color: white !important;
          width: 204px;
-         }a#menu_course.nav-link.menu-active {
+         }a#menu_editprofile.nav-link.menu-active {
          box-shadow: 4px -0.4px 1px -0.5px #e46f0e, 2px 1px 2px 3px rgb(0 0 0 / 10%) !important;
          color: white !important;
+         width: 204px;
+         }
+         .navbar-nav .nav-item .icon :hover {
+           fill: rgb(228, 111, 14);
          }
          .bg-gray-200 {
          background-color: #ffffff !important;
@@ -72,7 +80,7 @@
          {
          text-align: -webkit-center !important;
          }
-         a.nav-link.text-white.active.bg-gradient-primary {
+         a.nav-link.text-white.active.bg-gradient-primary { 
          /* color: red; */
          background: #26266C;
          background-color: #26266C !important;
@@ -80,13 +88,14 @@
          }
          li.nav-item_mobile :hover{
          }  
-          li.nav-item :hover{
+         li.nav-item a:hover{
          /* color: red; */
          /*background: #26266C;*/
-         /*background-color: #26266C !important;
+         background-color: #26266C !important;
          box-shadow: 4px -0.4px 1px -0.5px #e46f0e, 2px 1px 2px 3px rgb(0 0 0 / 10%);
          color:#ffffff !important;
-         width: 204px;*/
+         width: 204px;
+
          /*box-shadow:0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);*/
          }
          a.nav-link.text-white{
@@ -343,6 +352,14 @@
          .title_project
          {
          color: #535252;
+         margin-bottom: 30px;
+         font-family: 'Poppins' !important;
+         font-size: 40px !important;
+         font-weight: bold;
+         }
+         .programflow_title
+         {
+         color: #858585;
          margin-bottom: 30px;
          font-family: 'Poppins' !important;
          font-size: 40px !important;
@@ -706,37 +723,61 @@
          }
          /*program flow css */
      .title_Class{
-  font-size: 40px;
-  color: #858585;
-}
-  .button{
-    height: auto;
-    
-    box-shadow: 0px 3px 6px;
-  }
+          font-size: 40px;
+          color: #858585;
+        }
+          .button{
+            height: auto;
+            
+            box-shadow: 0px 3px 6px;
+          }
 
-.static-content .title {
-    /*color: #08087b;*/
-    color: darkslategray !important;
-    font-family: 'robotobold';
-    position: relative;
-    font-size: 22px;
-    padding-bottom: 20px;
-    margin-bottom: 0px;
-}
-.mysql-data-section .bg-color-data {
-    background: #000077;
-    /* height: 30px; */
-    width: 100%;
-    display: block;
-    display: block;
-    width: 100%;
-    color: #fff;
-    font-size: 14px;
-    padding: 7px 15px;
-    position: relative;
-    border-radius: 8px;
-}
+        .static-content .title {
+            /*color: #08087b;*/
+            color: darkslategray !important;
+            font-family: 'robotobold';
+            position: relative;
+            font-size: 22px;
+            padding-bottom: 20px;
+            margin-bottom: 0px;
+        }
+        .mysql-data-section .bg-color-data {
+            background: #000077;
+            /* height: 30px; */
+            width: 100%;
+            display: block;
+            display: block;
+            width: 100%;
+            color: #fff;
+            font-size: 14px;
+            padding: 7px 15px;
+            position: relative;
+            border-radius: 8px;
+        }
+          .static-content .title{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color:#373737;
+    font-weight: 500;
+   }
+   .static-content .static-middle-content p{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color:#373737;
+    font-weight: 500;
+   }
+   .data-collapse .collapse .middle-content-static .accordion .panel .panel-titles a{
+     font-size: 15px!important;
+    font-family: 'Poppins', sans-serif;
+    color:#373737;
+    font-weight: 500;
+   }
+    .data-collapse .collapse .middle-content-static .accordion .panel .panel-titles .collapse div{
+     font-size: 15px!important;
+    font-family: 'Poppins', sans-serif;
+    color:#373737;
+
+   }
 /*.col-md-9 {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
@@ -789,6 +830,7 @@ label:after {
   border-color: #707070;
   border-bottom: orange;
   opacity: 100%;
+
 
 }
 input:checked + label {

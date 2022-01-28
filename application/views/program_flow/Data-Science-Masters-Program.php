@@ -1,3 +1,4 @@
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
 <script>
    //menu
  document.getElementById('menu_programflow').classList.add("menu-active");
@@ -5,11 +6,13 @@
  document.getElementById('sidebar_icon_4').style.fill='#E46F0E';
 
 </script>
-<div class="col-md-10 title_Class">
-
+<div class="container">
+    
 <div class="row" >
-   <div class="col-lg-12 mt-3 py-5">
-         <div class="title_Class">Course Content</div>
+   <div class="col-md-9 mt-3 py-5">
+        <span class="programflow_title">
+              Course Content
+        </span>
     </div>
 </div>
 <div class="row" >
@@ -1684,7 +1687,7 @@ Spark DataFrame Basic Operations </br>
 											</p></div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success" style="border-radius: 18px">Selective</button></span>
+                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success" style="border-radius: 18px">self</button></span>
                      </div>
                   </div>
                   <?php $i=9;?>
@@ -1894,7 +1897,7 @@ Spark DataFrame Basic Operations </br>
                                  <p>The module deals with Text Analytics with NLP like R where you learn big data extraction, corpus analysis, analysis of multilingual text data, customized word cloud, Future trends in NLP and CL and many more. </p> </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success " style="border-radius: 18px">Selective</button></span>
+                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success " style="border-radius: 18px">self</button></span>
                      </div>
                   </div>
                   <?php $i=13;?>

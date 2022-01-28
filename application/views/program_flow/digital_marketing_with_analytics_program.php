@@ -1,11 +1,18 @@
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
 <script>
+   //menu
  document.getElementById('menu_programflow').classList.add("menu-active");
+ //icon
  document.getElementById('sidebar_icon_4').style.fill='#E46F0E';
+
 </script>
-<div class="col-md-10 title_Class">
+<div class="container">
+    
 <div class="row" >
-   <div class="col-lg-12 mt-3 py-5">
-         <div class="title_Class">Course Content</div>
+   <div class="col-md-9 mt-3 py-5">
+        <span class="programflow_title">
+              Course Content
+        </span>
     </div>
 </div>
 <div class="row" >
@@ -27,7 +34,7 @@
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <!-- <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span> -->
                      </div>
                   </div>
                   <?php $i=0; ?>
@@ -85,7 +92,7 @@
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <!-- <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span> -->
                      </div>
                   </div>
                   <?php $i=1; ?>
@@ -150,7 +157,7 @@
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <!-- <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span> -->
                      </div>
                   </div>
                   <?php $i=2;?>
@@ -246,7 +253,7 @@
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <!-- <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span> -->
                      </div>
                   </div>
                   <?php $i=4;?>
@@ -377,7 +384,7 @@
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <!-- <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span> -->
                      </div>
                   </div>
                   <?php $i=4;?>
@@ -438,7 +445,7 @@
                                  <p></p> </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <!-- <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span> -->
                      </div>
                   </div>
                   <?php $i=5;?>
@@ -537,7 +544,7 @@
                                  <p></p> </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <!-- <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span> -->
                      </div>
                   </div>
                   <?php $i=6;?>
