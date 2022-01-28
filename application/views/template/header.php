@@ -15,6 +15,14 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
       <link id="pagestyle" href="<?php echo base_url();?>assets/css/material-dashboard.css?v=3.0.0" rel="stylesheet" />
       <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
+
+      <!-- program flow css -->
+
+      <link rel="icon" type="image/png"   href="<?php echo base_url()?>program_assets/img/fevicon.png">    
+      <link rel="stylesheet" href="<?php echo base_url()?>program_assets/mastercss/design.css">
+      <script type="text/javascript" src="<?php echo base_url()?>program_assets/masterjs/jquery-1.11.0.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-collapse.js"></script>
+       <link rel = "stylesheet" href = "<?php echo base_url()?>assets/css/bootstrap.min.css"/>    
       <style type="text/css">
          body{
          font-family: 'Poppins', sans-serif;
@@ -565,6 +573,7 @@
          {
           font-size: 8px !important;
           font-weight: 500;
+          margin-left: -10px;
 
         }
          .header_text2
@@ -695,6 +704,60 @@
          font-size: 13px;
          margin-bottom: -48px;
          }
+         /*program flow css */
+     .title_Class{
+  font-size: 40px;
+  color: #858585;
+}
+  .button{
+    height: auto;
+    
+    box-shadow: 0px 3px 6px;
+  }
+
+.static-content .title {
+    /*color: #08087b;*/
+    color: darkslategray !important;
+    font-family: 'robotobold';
+    position: relative;
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+.mysql-data-section .bg-color-data {
+    background: #000077;
+    /* height: 30px; */
+    width: 100%;
+    display: block;
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 15px;
+    position: relative;
+    border-radius: 8px;
+}
+/*.col-md-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 81%;
+}*/
+button.btn.btn-success.button {
+    background-color: #22af47;
+    box-shadow: 0px 0px 8px rgb(34 175 71);
+    color: #fff;
+    transform: translateY(-7px);
+}
+.static-content .line {
+    width: 90%;
+    background: #08087b;
+    height: 4px;
+    margin-bottom: 20px;
+    width: 59%!important;
+}
+
+
+
       </style>
    </head>
    <script>
@@ -729,4 +792,5 @@
                   </a>
                </li>
    </nav>
+
    <!-- Navbar -->

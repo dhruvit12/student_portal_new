@@ -60,7 +60,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="<?php echo base_url();?>pages/virtual-reality.html" style="font-weight: 500;">
+          <a id="menu_programflow" class="nav-link  " href="<?php echo base_url()?>program_flow" style="font-weight: 500;">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
              <svg id="sidebar_icon_4" class="icon" style="height: auto; width: 23px; margin-bottom: 5px; font-family: Poppins; fill: rgb(128, 128, 128);" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 425.11 413.39" fill="#808080"><path d="M29.27,396.31c-6.48-3-8.41-8.11-8.34-15.07.26-27.93.1-55.87.11-83.8C21,288.2,25.25,284,34.53,284h85.66c8.77,0,13.12,4.33,13.12,13.05,0,28.06-.14,56.12.11,84.18.07,6.95-1.88,12.08-8.34,15.07Z"></path><path d="M164.75,396.31c-6.47-3-8.4-8.11-8.34-15.07.26-27.93.11-55.87.11-83.8,0-9.24,4.22-13.43,13.5-13.43h85.65c8.77,0,13.12,4.33,13.13,13.05,0,28.06-.15,56.12.11,84.18.06,6.95-1.88,12.08-8.34,15.07Z"></path><path d="M300.24,396.31c-6.47-3-8.4-8.11-8.34-15.07.26-27.92.1-55.85.11-83.77,0-9.25,4.2-13.46,13.45-13.46,27.93,0,55.85.15,83.77-.11,6.95-.06,12.08,1.86,15.06,8.35v95.83a17.24,17.24,0,0,1-8.24,8.23Z"></path><path d="M212.66,13h58c8.77,0,13.13,4.32,13.13,13q0,58.17,0,116.35c0,8.46-4.43,12.85-12.95,12.86H154.5c-8.52,0-12.94-4.4-12.94-12.86q0-58.36,0-116.72C141.56,17.44,146,13,154.31,13Q183.49,13,212.66,13Z"></path><path d="M88.31,231.13v30.24H66.17c-.08-1.08-.21-2.15-.21-3.22q0-18.52,0-37.06c0-8.24,4.48-12.69,12.74-12.69q58.95,0,117.89,0h4.7V178h22.51v30.4h4.78q58.76,0,117.51,0c9,0,13.29,4.26,13.29,13.27,0,13.1,0,26.19,0,39.58H337V231.06H224.05v30.25H201.53V231.13Z"></path></svg>
             </div>
@@ -76,7 +76,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="<?php echo base_url();?>pages/virtual-reality.html" style="font-weight: 500;">
+          <a class="nav-link text-white " href="<?php echo base_url();?>support" style="font-weight: 500;">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
              <i class="fa fa-support"  class="icon" id="sidebar_icon_6" style="font-size: 22px;margin-bottom:5px;"></i>
             </div>

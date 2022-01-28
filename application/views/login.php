@@ -96,7 +96,7 @@
                 <div class="authentication-box">
 
                   <div class="text-center">
-                    <img src="<?php echo base_url();?>assets/images/logo/logo.png" class="navbar-brand-img  " alt="main_logo" style="width: 100%;max-height: 500">
+                    <img src="<?php echo base_url();?>assets/images/logo/logo.png" class="navbar-brand-img  " alt="main_logo" style="width: 60%;">
                   </div>
                   
                   <div class="card mt-4">
