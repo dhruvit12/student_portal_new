@@ -12,11 +12,12 @@ class Program_flow extends CI_Controller {
 	}
     public function index()
 	{
-		$this->load->view('one_sidebar');
-
+		$this->load->view('template/header');
+		$this->load->view('template/sidebar');
+      
 		if('Data Science Pro'==$_SESSION['student_course_name'])
 		{
-			$this->load->view('program_flow');
+			$this->load->view('program_flow/data-science-pro-program');
 		}
 		if('AI'==$_SESSION['student_course_name'])
 		{
