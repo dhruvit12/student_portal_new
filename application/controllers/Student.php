@@ -80,8 +80,10 @@ class Student extends CI_Controller {
 	
     public function edit_profile()
     {
-    	$this->load->view('one_sidebar');
+    	$this->load->view('template/header');
+		$this->load->view('template/sidebar');
     	$this->load->view('profile');
+		
     }	
  	public function logout()
 	{

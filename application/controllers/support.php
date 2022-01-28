@@ -69,6 +69,6 @@ class Support extends CI_Controller {
 	        	 $this->load->view('support',$data);
 
 	}
-	}
+	
 
 ?>

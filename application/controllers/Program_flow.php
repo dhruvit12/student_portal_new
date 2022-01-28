@@ -18,6 +18,15 @@ class Program_flow extends CI_Controller {
 		if('Data Science Pro'==$this->session->userdata('student_course_name'))
 		{
 			$this->load->view('program_flow/data-science-pro-program');
+			// $this->load->view('program_flow/advance_ai_program');
+			// $this->load->view('program_flow/Data-Science-Masters-Program');
+			// $this->load->view('program_flow/business_intelligence_program');
+			// $this->load->view('program_flow/digital_marketing_with_analytics_program');
+			// $this->load->view('program_flow/data_science_with_r_program');
+			// $this->load->view('program_flow/data_science_with_python_program');
+			// $this->load->view('program_flow/powerbi_certification_program');
+			// $this->load->view('program_flow/data_visualization_with_tableau_program');
+		 
 		}
 		if('AI'==$this->session->userdata('student_course_name'))
 		{
