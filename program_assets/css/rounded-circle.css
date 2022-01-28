@@ -1,0 +1,94 @@
+.anzar-rounded-circle {
+  border-radius: 50% !important;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.anzar-rounded-circle-sm {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+}
+
+.anzar-rounded-circle-primary {
+  background-color: rgba(125, 145, 255, 0.1) !important;
+  color: #5c76fb;
+}
+.anzar-rounded-circle-success {
+  background-color: rgba(43, 173, 13, 0.15) !important;
+  color: #2bad0d;
+}
+.anzar-rounded-circle-warning {
+  background-color: rgba(243, 170, 18, 0.15) !important;
+  color: #f3ab12;
+}
+.anzar-rounded-circle-dark {
+  background-color: #f3f6f9 !important;
+  color: #868daa;
+}
+.anzar-rounded-circle-danger {
+  background-color: rgba(244, 67, 54, 0.15) !important;
+  color: #ff2b2b;
+}
+
+.custom-danger {
+  background-color: rgba(244, 67, 54, 0.15) !important;
+  color: #ff2b2b !important;
+}
+.custom-primary {
+  background-color: rgba(125, 145, 255, 0.1) !important;
+  color: #5c76fb !important;
+}
+.custom-success {
+  background-color: rgba(43, 173, 13, 0.15) !important;
+  color: #2bad0d !important;
+}
+.custom-warning {
+  background-color: rgba(243, 170, 18, 0.15) !important;
+  color: #f3ab12 !important;
+}
+.custom-dark {
+  background-color: #f3f6f9 !important;
+  color: #868daa !important;
+}
+
+.hover-white {
+  color: inherit;
+}
+
+.hover-white:hover {
+  color: white !important;
+}
+
+.static-title-dark {
+  padding: 10px 10px;
+  background-color: rgba(22, 26, 35, 0.1) !important;
+  border: 0px solid green;
+  border-radius: 8px;
+}
+
+/* setting icon animation in all pages */
+.animate-setting {
+  animation: spin 4s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* add icon animation in all pages */
+.animate-add {
+  animation: breath 10s linear infinite;
+}
+@keyframes breath {
+  50% {
+    transform: scale(0.75);
+  }
+}

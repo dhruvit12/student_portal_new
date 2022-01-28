@@ -1,0 +1,967 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* html{
+  overflow-x: hidden;
+} */
+body {
+  font-family: "Sarabun", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  /* overflow-x: hidden; */
+}
+
+ul.nav-pills {
+  top: 120px;
+  position: sticky;
+}
+ul .nav-link{
+  color:#000000;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color:#1c489a;
+  color:white;
+  border:none;
+}
+
+.swal-text {
+  font-family: "Sarabun", sans-serif;
+  font-size:20px;
+}
+
+h2{
+  font-size:30px!important;
+}
+
+
+.review-scroll::-webkit-scrollbar {
+  max-width: 20px;
+  height: 6px;
+}
+
+.review-scroll::-webkit-scrollbar-track {
+  background: #e8e8e8;
+  border-radius: 5px;
+  height: 5px;
+}
+a{
+  cursor:pointer;
+}
+
+.review-scroll::-webkit-scrollbar-thumb {
+  background-color: #1c489a;
+  border-radius: 5px;
+  background-clip: content-box;
+}
+
+/* .review-scroll::-moz-scrollbar-thumb {
+  background-color: #1c489a;
+
+  border-radius: 5px;
+  background-clip: content-box;
+} */
+/* 1 */
+.review-scroll1::-webkit-scrollbar {
+  max-height: 10px;
+  width: 6px;
+}
+
+.review-scroll1::-webkit-scrollbar-track {
+  background: transparent !important;
+  border-radius: 5px;
+
+  height: 5px;
+}
+.review-scroll1::-webkit-scrollbar-thumb {
+  background-color: #48CAE4;
+
+  border-radius: 5px;
+  background-clip: content-box;
+}
+/* 2 */
+.review-scroll2::-webkit-scrollbar {
+  max-height: 10px;
+  width: 6px;
+}
+
+.review-scroll2::-webkit-scrollbar-track {
+  background: transparent !important;
+  border-radius: 5px;
+
+  height: 5px;
+}
+.review-scroll2::-webkit-scrollbar-thumb {
+  background-color: #0077B6;
+
+  border-radius: 5px;
+  background-clip: content-box;
+}
+/* 3 */
+.review-scroll3::-webkit-scrollbar {
+  max-height: 10px;
+  width: 6px;
+}
+
+.review-scroll3::-webkit-scrollbar-track {
+  background: transparent !important;
+  border-radius: 5px;
+
+  height: 5px;
+}
+.review-scroll3::-webkit-scrollbar-thumb {
+  background-color: #023E8A;
+
+  border-radius: 5px;
+  background-clip: content-box;
+}
+.home-section {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  background: #262626;
+  height: 500px;
+}
+/* .bg_home{
+  background-image:url('assets/img/index/bg.png'); background-repeat:no-repeat; background-position:-390px 250px; background-size: 55%
+} */
+/* .home_section_img {
+  background-image:url('../img/user/bg-1.png');
+  background-repeat:no-repeat;
+  background-size:cover%;
+  background-position:center;
+  
+} */
+
+.home_section_img {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  background: #262626;
+  
+  height: auto;
+
+}
+
+.home-section-career {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  background: #262626;
+  height: 800px;
+  padding: 30px 0;
+}
+.home-section-career-mobile {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 90%, 0 100%);
+  background: #262626;
+  height: auto;
+  padding: 0 0 120px 0;
+}
+
+.home-footer {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 100%);
+  background: #414141;
+  height: auto;
+}
+
+.home-hero-banner {
+  background-image: url("../img/index/hero.webp"); /* The image used */
+
+  height: 500px; /* You must set a specified height */
+  background-position: 76%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bg_datasciencepro{
+  background-image: url("../img/Data Science Pro/Group 108.png"); /* The image used */
+
+  height: 310px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  width:100%
+}
+.home-hero-banner-mob {
+  background-image: url("../img/index/bg-mob.png"); /* The image used */
+
+  height: 500px; /* You must set a specified height */
+  background-position: 71%;  /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.home-hero-about {
+    rel="preload";
+  background-image: url("../img/hero-banner/banner-3.webp"); /* The image used */
+
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+.home-hero-carrier {
+  background-image: url("../img/hero-banner/banner-21.webp"); /* The image used */
+  height: 65vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  padding:20px 0px
+}
+
+.img-size{
+  height:400px;
+}
+.img-size-m{
+ width:50%;
+ height:auto;
+}
+.img-size-m1{
+  width:50%;
+  height:400px!important;
+ }
+.img-size-slider{
+ width:100%;
+ height:auto;
+}
+.home-hero-banner-c {
+  background-image: url("../img/hero-banner/austin-distel.webp"); /* The image used */
+
+  height: 500px; /* You must set a specified height */
+  background-position:  35%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.bg_numbers_left{
+  background-image: url("../img/corporate/number_left.png"); /* The image used */
+/* background-color:yellow; */
+  /* You must set a specified height */
+  background-position:  4%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: content;
+}
+.bg_numbers_right{
+  background-image: url("../img/corporate/number_right.png"); /* The image used */
+/* background-color:yellow; */
+  /* You must set a specified height */
+  background-position:  52%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: content;
+}
+.bg_numbers_left_mob{
+  background-image: url("../img/corporate/number_mob1.png"); /* The image used */
+/* background-color:yellow; */
+  /* You must set a specified height */
+  background-position: left top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: content;
+}
+.home-hero-banner-gradient {
+  background-image: linear-gradient(to right, #D4FF17 , #5EA1B5);
+  height: 500px; /* You must set a specified height */
+}
+.home-hero-banner-course {
+  background-image: url("../img/Data Science Pro/bg_course.png"); /* The image used */
+
+  height: 500px; /* You must set a specified height */
+  background-position: 35%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.home-hero-banner-ai {
+  background-image: url("../img/Advanced AI/cover_photo.webp"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.home-hero-banner-bi {
+  background-image: url("../img/BI with intell/cover_photo.png"); /* The image used */
+  height: 500px; /* You must set a specified height */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.home-hero-banner-bi-mob {
+  background-image: url("../img/BI with intell/cover_photo.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.home-hero-banner-dp {
+  background-image: url("../img/Data Science with Python/cover_photo.png"); /* The image used */
+  height: 500px; /* You must set a specified height */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.home-hero-banner-dp-mob {
+  background-image: url("../img/Data Science with Python/cover_photo.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: right; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.home-hero-banner-r {
+  background-image: url("../img/Data Science with R/cover_photo.png"); /* The image used */
+  height: 500px; /* You must set a specified height */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.home-hero-banner-r-mob {
+  background-image: url("../img/Data Science with R/cover_photo.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: right; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.home-hero-banner-v {
+  background-image: url("../img/Data visualization with Tableau/cover_photo.png"); /* The image used */
+  height: 500px; /* You must set a specified height */
+  background-position: 100% 100%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.home-hero-banner-v-mob {
+  background-image: url("../img/Data visualization with Tableau/cover_photo.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: right; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.home-hero-banner-digi {
+  background-image: url("../img/digi_marketing/cover_photo.png"); /* The image used */
+  height: 580px; /* You must set a specified height */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.home-hero-banner-digi-mob {
+  background-image: url("../img/digi_marketing/cover_photo.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: right; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  width:100%
+}
+
+
+.home-hero-banner-powerbi {
+  background-image: url("../img/powerbi_certification/cover_photo.png"); /* The image used */
+
+  height: auto; /* You must set a specified height */
+  background-position:top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.home-hero-banner-course1 {
+  background-image: url("../img/Data Science Pro/bg_course.png"); /* The image used */
+
+  height: 600px; /* You must set a specified height */
+  background-position: 35%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.home-hero-banner-course-mobile {
+  background-image: url("../img/Data Science Pro/cover photo.png"); /* The image used */
+
+  height: auto; /* You must set a specified height */
+  background-position: 100% 60%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  width:100%;
+  height:auto
+}
+.section-carrier-2 {
+  background-color:#D4FFF6;
+  color:black;
+  height: auto; /* You must set a specified height */
+
+}
+
+.home-hero-title {
+  font-size: 40px;
+}
+
+.custom-navbar-item {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 500;
+  color: #000000 !important;
+  font-size: 15px;
+}
+.review-card {
+  border: 0px solid rgba(0, 0, 0, 0.125);
+}
+.review-card1 {
+  border: 0px solid rgba(255, 255, 255, 1.0);
+}
+.bg_corporate1{
+  background-image: url("../img/corporate/ds.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.bg_corporate2{
+  background-image: url("../img/corporate/ai.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.bg_corporate3{
+  background-image: url("../img/corporate/ds.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.bg_corporate4{
+  background-image: url("../img/corporate/dm.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+/* mobile */
+.bg_corporate_mob1{
+  background-image: url("../img/corporate/ds.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  width:100%
+}
+.bg_corporate_mob2{
+  background-image: url("../img/corporate/ai.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  width:100%
+}
+.bg_corporate_mob3{
+  background-image: url("../img/corporate/bi.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  width:100%
+}
+.bg_corporate_mob4{
+  background-image: url("../img/corporate/dm.png"); /* The image used */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  width:100%
+}
+
+
+.review-review-card {
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.review-card-body1 {
+  border-radius: 2px;
+  
+}
+
+.review-bottom-category {
+  z-index: 10000;
+  margin-left: 40px;
+  margin-top: -20px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.review-top-img {
+  z-index: 10000;
+  margin-left: 0px;
+  margin-bottom: -50px;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  box-sizing: border-box;
+}
+.rounded-circle-sm {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+}
+ 
+.white-box{
+  height:200px;
+  width:300px;
+  text-color:black;
+  text-align:center;
+}
+.white-box2{
+  height:280px;
+  width:280px;
+  background-color:white;
+  text-color:black;
+  text-align:center;
+}
+.white-box1{
+  height:auto;
+  width:70%;
+  text-color:black;
+  text-align:center;
+  margin-top:-5.5%;
+}
+.white-box5{
+  height:auto;
+  width:60%;
+  background-color:white;
+  text-color:black;
+  text-align:center;
+}
+.black-circle{
+  width: 200px;
+  height: 200px;
+  background-color:#707070;
+}
+
+.yellow-box{
+  background-color:#D4FF17;
+  color:black;
+  height:auto;
+  width:100%;
+}
+.yellow-box-hl{
+  background-color:#D4FF17;
+  color:black;
+  height:250px;
+  width:70%;
+}
+.yellow-mob{
+  background-color:#D4FF17;
+  color:black;
+  height:200px;
+  width:90%;
+}
+.yellow-box-hs{
+  background-color:#D4FF17;
+  color:black;
+  height:250px;
+  width:50%;
+}
+.yellow-mob1{
+  background-color:#D4FF17;
+  color:black;
+  height:170px;
+  width:70%;
+}
+.blue-box{
+  background-color: #6A86FF;
+  color:black;
+  height:auto;
+  width:100%;
+}
+
+/* XL*/
+@media only screen and (min-width: 1200px) {
+
+}
+/* LG */
+@media only screen and (min-width: 992px) {
+  
+}
+/* Medium */
+@media only screen and (min-width: 768px) {
+  
+}
+/*Small */
+@media only screen and (min-width: 600px) {
+  
+}
+/* Extra small */
+@media only screen and (max-width: 576px) {
+  
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: left;
+  background-image: none;
+  z-index:0!important;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 35px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 35px;
+  color: black;
+}
+/* The Modal (background) */
+
+input {
+  outline: 0;
+  border-width: 0 0 1px 0!important;
+  border-color: black!important;
+}
+input:focus {
+  border-color: black!important;
+}
+.new_input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  background-color: #B71FEC;
+}
+
+div.b {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  -ms-transform: skewY(20deg); /* IE 9 */
+  transform: skewY(20deg);
+}
+
+.testimonial {
+  display: none;
+}
+
+.overfloww{
+  overflow-x:hidden;
+  overflow-y:hidden;
+  height:155px;
+  -ms-overflow-style: none;
+  /* scrollbar-height: block!important; */
+  scrollbar-height: none;
+}
+.overfloww::-webkit-scrollbar {
+  display: none;
+}
+.overfloww {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* horizontal */
+.overfloww1{
+  overflow-y:hidden;
+  overflow-x:scroll;
+  height:170px !important;
+  -ms-overflow-style: none!important;
+  scrollbar-height: block!important;
+}
+.overfloww1::-webkit-scrollbar {
+  display: none;
+}
+.overfloww1 {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.btn-purple{
+  background-color:#B71FEC;
+  color:white;
+  border-bottom:none!important;
+  padding: 5px 40px;
+}
+
+.carousel-indicators {
+  /* position: absolute; */
+  right: 0;
+  bottom: -70px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+}
+  .carousel-indicators li{
+    background-color:#000000!important;
+    color:black;
+  }
+
+  .course_list{
+    box-shadow: 10px 10px #0002;
+    border-radius: 5px;
+  }
+  
+  
+  
+
+  .footer_bg {
+    background-image: url("../img/index/Path 13.png"); /* The image used */
+  
+    height: auto; /* You must set a specified height */
+    background-position: 76%; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    font-size:16px;
+    letter-spacing: 1px;
+  }
+
+  .bg_modal{
+  background-image: linear-gradient(to right,#ffffff , #c2fcff);
+    height: auto; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    font-size:16px;
+    letter-spacing: 1px;
+    padding:0;
+    margin:0;
+    border-radius:20px;
+  }
+  .bg_modal_sub{
+    background-image: url("../img/index/modal_img.png"); /* The image used */
+    height: auto; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    font-size:16px;
+    letter-spacing: 1px;
+    width:100%;
+    border-radius:20px;
+    /* padding:0;
+    margin:0; */
+  }
+  .bg_modal_sub_mob{
+    background-image: url("../img/index/modal_img.png"); /* The image used */
+    height: 200px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    font-size:16px;
+    letter-spacing: 1px;
+    width:100%;
+    /* background-color:yellow; */
+    border-radius:20px;
+    /* padding:0;
+    margin:0; */
+
+  }
+
+  /* next */
+  .bg_modal_sub_next{
+    background-image: url("../img/index/imgg/DS.jpg"); /* The image used */
+    height: auto; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    font-size:16px;
+    letter-spacing: 1px;
+    width:100%;
+    border-radius:20px;
+    /* padding:0;
+    margin:0; */
+  }
+  .bg_modal_sub_mob_next{
+    background-image: url("../img/index/imgg/DS.jpg"); /* The image used */
+    height: 200px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    font-size:16px;
+    letter-spacing: 1px;
+    width:100%;
+    /* background-color:yellow; */
+    border-radius:20px;
+    /* padding:0;
+    margin:0; */
+
+  }
+  .footer_bg a{
+   text-decoration:none;
+  }
+  .footer_bg a i{
+    font-size:30px;
+   }
+   .font_header{
+    font-size:18px!important; 
+    font-weight:600;
+   }
+
+   .dropdown-item{
+    padding: 15px 60px 15px 20px;
+    color: #1c489a;
+    font-weight:700;
+    transition: 0.3s;
+    /* transition-delay: 2s; */
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    }
+
+    
+    
+    .dropdown-item:hover{
+      background-color: #2564da;
+      color:white;
+      transition: 0.5s;
+      }
+     
+   /* }
+   
+    .dropdown-item a{
+    cursor: pointer;
+    text-decoration:none;
+    color:black;
+   
+   
+   } */
+    /*.dropdown-item a:hover{
+    color:white;
+    background-color: #1c489a;
+   
+} */
+
+
+   /* .navbar .dropdown-toggle, .navbar .dropdown-menu a {
+    cursor: pointer;
+}
+
+.navbar .dropdown-item.active, .navbar .dropdown-item:active {
+    color: inherit;
+    background-color: inherit;
+}
+
+
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+    background-color: #1c489a;
+    transition: 0.5s;
+}
+.navbar .dropdown-item:focus, .navbar .dropdown-item a {
+text-decoration:none;
+  color:black;
+}
+.navbar .dropdown-item:focus, .navbar .dropdown-item a:hover {
+  color:white;
+}
+
+
+@media (min-width: 767px) {
+    .navbar .dropdown-toggle:not(.nav-link)::after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: .5em;
+        vertical-align: middle;
+        /* border-bottom: .3em solid transparent;
+        border-top: .3em solid transparent;
+        border-left: .3em solid;
+         }
+} */
+   
+.modal-lg {
+  /* max-width: 900px!important;
+  width:900px!important;
+  height:414px!important;
+  margin:auto;
+  border-radius:23px; */
+}
+.radius_new{
+  border-radius:26px;
+}
+
+
+.form_png1{
+  /* background-image: url("../img/index/51.png");  */
+  /* The image used */
+
+  height: 200px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  font-size:16px;
+  border-radius:23px;
+}
+.form_png2{
+  background-image: url("../img/index/52.png"); /* The image used */
+
+  height: 200px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  font-size:16px;
+  border-radius:23px;
+}
+.form_png3{
+  background-image: url("../img/index/53.png"); /* The image used */
+
+  height: 200px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  font-size:16px;
+  border-radius:23px;
+}
+.form_png4{
+  background-image: url("../img/index/54.png"); /* The image used */
+
+  height: 200px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  font-size:16px;
+  border-radius:23px;
+}
+.form_png5{
+  background-image: url("../img/index/55.png"); /* The image used */
+
+  height: 200px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  font-size:16px;
+  border-radius:23px;
+}
+.form_png6{
+  background-image: url("../img/index/56.png"); /* The image used */
+
+  height: 200px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  font-size:16px;
+  border-radius:23px;
+}
+
+
+@media only screen and (max-width: 767px) {
+  html, body{
+    overflow-x:hidden!important;
+  }
+  body{
+    padding-top:30px;
+  }
+}
+
+a{
+  text-decoration:none!important;
+}
+
