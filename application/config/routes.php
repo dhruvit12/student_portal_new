@@ -19,6 +19,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
+$route['recording/(:any)']='course/recording/$1';
 $route['assignment']='assignment';
 $route['case_study']='casestudy';
 $route['quiz']='quiz';

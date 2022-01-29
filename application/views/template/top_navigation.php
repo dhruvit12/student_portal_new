@@ -9,8 +9,8 @@
         <div class="card course_header_new">
           <div class="row">
                    <div class="col-lg-2 col-md-3 col-sm-3" id="header-text">
-                     <a href="<?php echo base_url()?>course" id="course">Recording</a>
-                      <?php if($this->uri->segment(1)=='course'){
+                     <a href="<?php echo base_url()?>recording/1" id="course">Recording</a>
+                      <?php if($this->uri->segment(1)=='recording'){
                         ?>
                         <div id="line" style="margin-left:40px;">
                         </div>

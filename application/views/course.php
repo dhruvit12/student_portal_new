@@ -117,7 +117,7 @@ button.tablink.Self_Paced_Course_tab {
       			// code...
       			?>
       			<div class="col-md-4 mb-4 ">
-      			<a href="couorse_id/<?php echo $value->id;?>">
+      			<a href="recording/<?php echo $value->id;?>">
       				<div class="card" id="course_card">
       					<img class="card-img-top" src="<?php echo base_url()?>assets/images/student_portal_icon/cource_image.png" class="img-fluid" alt="course image" >
       					<div class="container">
@@ -159,7 +159,7 @@ button.tablink.Self_Paced_Course_tab {
       		foreach ($self_course_data as $key => $self_course_value) {
       			?>
       			<div class="col-md-4 mb-4 ">
-      			<a href="couorse_id/<?php echo $self_course_value->id;?>">
+      			<a href="recording/<?php echo $self_course_value->id;?>">
       				<div class="card" id="course_card">
       					<img class="card-img-top" src="<?php echo base_url()?>assets/images/student_portal_icon/cource_image.png" class="img-fluid" alt="course image" >
       					<div class="container">
