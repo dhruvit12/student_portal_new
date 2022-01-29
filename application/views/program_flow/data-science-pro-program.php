@@ -1,42 +1,41 @@
-<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-md ">
 <script>
    //menu
  document.getElementById('menu_programflow').classList.add("menu-active");
  //icon
  document.getElementById('sidebar_icon_4').style.fill='#E46F0E';
-
 </script>
 <div class="container">
     
 <div class="row" >
    <div class="col-md-9 mt-3 py-5">
-        <span class="title_project">
+        <span class="programflow_title">
               Course Content
         </span>
     </div>
 </div>
+
 <div class="row" >
-   <div class="col-lg-12 demo">
+   <div class="col-md-12 demo">
       <div class=" mysql-data-section">
             <div class="C-static">
                <div class="C-static-data">
                   <div class="c-padding-content">
                      <div class="form-row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                            <div class="static-content">
-                              <h2 class="title">Statistics Essentials & Fundamental of Data Science
+                              <h2 class="title" >Statistics Essentials & Fundamental of Data Science
 <span class="live-data d-none"><i class="fa fa-circle"></i> </span></h2>
                               <div class="line"></div>
                               <div class="static-middle-content">
-                                 <!-- <h6>Statistics Fundamentals </h6> -->
                                  <p>Statistics is the vital input that data science people require. The module covers the concept building 
-on techniques of data collection, organization, analysis, interpretation, and representation. It begins 
-with understanding of the statistical population to modelling and testing.
+                                  on techniques of data collection, organization, analysis, interpretation, and representation. It begins 
+                                  with understanding of the statistical population to modelling and testing.
                                  </p>
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background:transparent"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
                      </div>
                   </div>
                   <?php $i=0; ?>
@@ -72,7 +71,7 @@ with understanding of the statistical population to modelling and testing.
                                                </div>
                                        
                                               <div id="collapseTwo<?php echo $i?>" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionNewExample<?php echo $i?>">
-                                                  <div class="panel-data">
+                                                  <div class="panel-data" >
                                                   Introduction to Statistics</br>
                                                     Decsriptive v/s Inteffrential Statistics </br>
                                                     Variables and Types of Variables </br>
@@ -152,13 +151,13 @@ with understanding of the statistical population to modelling and testing.
         <!-- second
      -->
     <div class="row" >
-   <div class="col-lg-12 ">
+   <div class="col-md-12 ">
       <div class="mysql-data-section">
             <div class="C-static">
                <div class="C-static-data">
                   <div class="c-padding-content">
                      <div class="form-row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                            <div class="static-content">
                               <h2 class="title">In-Depth Knowledge of SQL
 <span class="live-data d-none"><i class="fa fa-circle"></i> </span></h2>
@@ -169,7 +168,7 @@ with understanding of the statistical population to modelling and testing.
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                         <span class="desktop-live-data mt-5" style="background:transparent"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
                      </div>
                   </div>
                   <?php $i=1; ?>
@@ -336,13 +335,13 @@ with understanding of the statistical population to modelling and testing.
       
      
     <div class="row" >
-   <div class="col-lg-12 ">
+   <div class="col-md-12 ">
       <div class="mysql-data-section">
             <div class="C-static">
                <div class="C-static-data">
                   <div class="c-padding-content">
                      <div class="form-row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                            <div class="static-content">
                               <h2 class="title">Data Science with Python
 <span class="live-data d-none"><i class="fa fa-circle"></i> </span></h2>
@@ -353,7 +352,7 @@ with understanding of the statistical population to modelling and testing.
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background:transparent"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
                      </div>
                   </div>
                   <?php $i=2;?>
@@ -498,13 +497,13 @@ with understanding of the statistical population to modelling and testing.
           <!-- four 
          -->
        <div class="row" >
-   <div class="col-lg-12 ">
+   <div class="col-md-12 ">
       <div class="mysql-data-section">
             <div class="C-static">
                <div class="C-static-data">
                   <div class="c-padding-content">
                      <div class="form-row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                            <div class="static-content">
                               <h2 class="title">Machine Learning with Python
 <span class="live-data d-none"><i class="fa fa-circle"></i> </span></h2>
@@ -515,7 +514,7 @@ with understanding of the statistical population to modelling and testing.
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background:transparent"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
                      </div>
                   </div>
                   <?php $i=3;?>
@@ -572,7 +571,7 @@ with understanding of the statistical population to modelling and testing.
                                                   Introduction to Supervised Learning</br>
                                                   Supervised Learning- Real-life Scenario</br>
                                                   Supervised Learning Flow </br>
-                                                  Types of Supervised Algorithms </br>
+                                                  Types of Supervised Amdorithms </br>
                                                   hat is Logistics Regression?</br>
                                                   Linear Regression Vs Logistic Regression<br>
                                                   Understanding Logistic Regression</br>
@@ -606,7 +605,7 @@ with understanding of the statistical population to modelling and testing.
                                                   Introduction to Unsupervised Learning</br>
                                                   Unsupervised Learning- Real-life Scenario</br>
                                                   Unsupervised Learning Flow </br>
-                                                  Types of Unsupervised Algorithms</br>
+                                                  Types of Unsupervised Amdorithms</br>
                                                   What is Clustering?</br>
                                                   Learning about K-means Clustering</br>
                                                   Optimal Number of Clusters</br>
@@ -647,12 +646,12 @@ with understanding of the statistical population to modelling and testing.
                                               Understand Ensemble Learning </br>
                                               Ensemble Learning - Real-life Scenario</br>
                                               Ensemble Learning  Flow <br>
-                                              Types of Ensemble Learning Algorithm<br>
+                                              Types of Ensemble Learning Amdorithm<br>
                                               Understanding about Random Forest<br>
                                               Math Behind Random Forest<br>
                                               Bagging & Boosting<br>
                                               Learn about Adaboost<br>
-                                              Adaboost Algorithm<br>
+                                              Adaboost Amdorithm<br>
                                               Gradient Boosting<br>
                                               Xgboost<br>
                                               Model Selection<br>
@@ -699,13 +698,13 @@ with understanding of the statistical population to modelling and testing.
           <!-- four 
          -->
        <div class="row" >
-   <div class="col-lg-12 ">
+   <div class="col-md-12 ">
       <div class="mysql-data-section">
             <div class="C-static">
                <div class="C-static-data">
                   <div class="c-padding-content">
                      <div class="form-row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                            <div class="static-content">
                               <h2 class="title">Data Science with R
 <span class="live-data d-none"><i class="fa fa-circle"></i> </span></h2>
@@ -716,7 +715,7 @@ with understanding of the statistical population to modelling and testing.
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background:transparent"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
                      </div>
                   </div>
                   <?php $i=4;?>
@@ -822,7 +821,7 @@ with understanding of the statistical population to modelling and testing.
                                                     Introduction to Supervised Learning<BR>
                                                     Supervised Learning- Real-life Scenario<BR>
                                                     Supervised Learning Flow<BR>
-                                                    Types of Supervised Algorithms<BR>
+                                                    Types of Supervised Amdorithms<BR>
                                                     What is Logistics Regression?<BR>
                                                     Understanding Logistic Regression<BR>
                                                     What is Decision Tree?<BR>
@@ -848,7 +847,7 @@ with understanding of the statistical population to modelling and testing.
                                               Introduction to Unsupervised Learning<BR>
                                                 Unsupervised Learning- Real-life Scenario<BR>
                                                 Unsupervised Learning Flow<BR>
-                                                Types of Unsupervised Algorithms<BR>
+                                                Types of Unsupervised Amdorithms<BR>
                                                 What is Clustering?<BR>
                                                 Learning about K-means Clustering<BR>
                                                 Understanding Hierarchical Clustering<BR>
@@ -874,13 +873,13 @@ with understanding of the statistical population to modelling and testing.
           <!-- four 
          -->
        <div class="row" >
-   <div class="col-lg-12 ">
+   <div class="col-md-12 ">
       <div class="mysql-data-section">
             <div class="C-static">
                <div class="C-static-data">
                   <div class="c-padding-content">
                      <div class="form-row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                            <div class="static-content">
                               <h2 class="title">Working with Tableau
 <span class="live-data d-none"><i class="fa fa-circle"></i> </span></h2>
@@ -891,7 +890,7 @@ with understanding of the statistical population to modelling and testing.
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background:transparent"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
                      </div>
                   </div>
                   <?php $i=5;?>
@@ -1060,13 +1059,13 @@ with understanding of the statistical population to modelling and testing.
           <!-- four 
          -->
        <div class="row" >
-   <div class="col-lg-12 ">
+   <div class="col-md-12 ">
       <div class="mysql-data-section">
             <div class="C-static">
                <div class="C-static-data">
                   <div class="c-padding-content">
                      <div class="form-row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                            <div class="static-content">
                               <h2 class="title">Complete Guide to MongoDB (Self Paced)
 <span class="live-data d-none"><i class="fa fa-circle"></i> </span></h2>
@@ -1077,7 +1076,7 @@ with understanding of the statistical population to modelling and testing.
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background:transparent"> <button class="btn btn-success button" style="border-radius: 18px">Self</button></span>
                      </div>
                   </div>
                   <?php $i=6;?>
@@ -1252,13 +1251,13 @@ with understanding of the statistical population to modelling and testing.
           <!-- four 
          -->
        <div class="row" >
-   <div class="col-lg-12 ">
+   <div class="col-md-12 ">
       <div class="mysql-data-section">
             <div class="C-static">
                <div class="C-static-data">
                   <div class="c-padding-content">
                      <div class="form-row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                            <div class="static-content">
                               <h2 class="title">Working with AI and Deep Learning (Self Paced)
 <span class="live-data d-none"><i class="fa fa-circle"></i> </span></h2>
@@ -1269,7 +1268,7 @@ with understanding of the statistical population to modelling and testing.
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background:transparent"> <button class="btn btn-success button" style="border-radius: 18px">SELF</button></span>
                      </div>
                   </div>
                   <?php $i=7;?>
@@ -1389,13 +1388,13 @@ with understanding of the statistical population to modelling and testing.
           <!-- four 
          -->
        <div class="row" >
-   <div class="col-lg-12 ">
+   <div class="col-md-12 ">
       <div class="mysql-data-section">
             <div class="C-static">
                <div class="C-static-data">
                   <div class="c-padding-content">
                      <div class="form-row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                            <div class="static-content">
                               <h2 class="title">Text Analysis with NLP (Self Paced)
 <span class="live-data d-none"><i class="fa fa-circle"></i> </span></h2>
@@ -1406,7 +1405,7 @@ with understanding of the statistical population to modelling and testing.
                               </div>
                            </div>
                         </div>
-                        <span class="desktop-live-data mt-5" style="background-color: white;"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
+                        <span class="desktop-live-data mt-5" style="background:transparent"> <button class="btn btn-success button" style="border-radius: 18px">Live</button></span>
                      </div>
                   </div>
                   <?php $i=8;?>

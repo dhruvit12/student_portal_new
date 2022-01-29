@@ -328,8 +328,10 @@ foreach ($offline_session_log as $key => $offline_Session_log_value) {
 	
     public function edit_profile()
     {
-    	$this->load->view('one_sidebar');
+    	$this->load->view('template/header');
+		$this->load->view('template/sidebar');
     	$this->load->view('profile');
+		
     }	
  	public function logout()
 	{

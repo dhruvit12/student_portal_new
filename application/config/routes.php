@@ -40,3 +40,6 @@ $route['mcq-test-result/(:num)']='Quiz/mcq_test_result/$1';
 $route['video-play']='Video/play';
 $route['data_science_pro']='Installation_pro/data_science_pro';
 
+// edit_profile
+$route['profile']='student/edit_profile';
+
