@@ -1,4 +1,11 @@
 <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+<style type="text/css">
+   .btn-link {
+    font-weight: 400;
+    color: #26266c !important;
+    text-decoration: none;
+}
+</style>
    <!-- Navbar -->
    <script>
       //menu
@@ -16,7 +23,7 @@
    <div class="container-fluid py-4">
    <div class="row">
       <!-- First Header start -->
-      <div class="col-lg-12 col-md-12 ">
+      <div class="col-lg-12 col-md-12 "> 
          <div class="card dashboard_header ">
             <div class="row dashboard_header_content">
                <div class="col-md-3 col-lg-2  col-3">
@@ -24,10 +31,12 @@
                </div>
                <div class="col-md-6 col-lg-8 col-8 header_text_center" >
                   <span class="header_text1" style="font-size: clamp(12px, 1vw, 18px);">Welcome to Fingertips</span>
-                  <span class="header_text2" style="font-size: clamp(12px, 3vw, 25px);">You have enrolled in Data Science Pro</span>
-                  <span class="header_text3">Your Batch: <?php echo $batch_name;?></span>
+                  <span class="header_text2" style="font-size: clamp(12px, 3vw, 25px);">You have enrolled in <?php echo $course_name;?></span>
+                  <span class="header_text3">Your Batch:  <?php echo $batch_name;?></span>
                </div>
-               <div class="col-md-2 col-lg-2 col-2 header_text4" style="font-size: clamp(16px, 5vw, 55px);font-family: 'Poppins' !important;margin-top: 29px;"> #191 </div>
+               <div class="col-md-2 col-lg-2 col-2 header_text4" style="font-size: clamp(16px, 5vw, 55px);font-family: 'Poppins' !important;margin-top: 29px;">
+                <!-- <?php echo '# '.$student_id; ?> -->
+                </div>
             </div>
          </div>
       </div>
@@ -66,51 +75,41 @@
                         <div class="card height-equal" >
                            <div class="card-body">
                               <div class="upcoming-event">
-                                 <?php
-                                    include('dbcon.php');
-                                      $date = date_create();
-                                      $timestamp = date_timestamp_get($date);
-                                      $query = "SELECT * FROM `offline_session` WHERE `batch_id` = $batch_id AND `is_deleted` = 0";
-                                      $runfetch = mysqli_query($con, $query);
-                                      $noofrow = mysqli_num_rows($runfetch);
-                                      
-                                      if ($noofrow >0 && $runfetch == TRUE) { 
-                                         while ($data = mysqli_fetch_assoc($runfetch)) {
-                                        
-                                      
-                                      $session_id = $data['id'];
-                                      $query10 = "SELECT * FROM `offline_session_log` WHERE `session_id` = $session_id";
-                                     $runfetch10 = mysqli_query($con, $query10);
-                                    
-                                      $noofrow10 = mysqli_num_rows($runfetch10);
-                                      if($noofrow10 == 0)
-                                      {
-                                           ?>
+
+<!-- Ci Code Start -->
+<?php 
+if(!empty($offline_session_data['offline_session_data']))
+foreach ($offline_session_data['offline_session_data'] as $key => $offline_value) {
+   ?>
+
                                  <div class="col-lg-12">
                                   <div class="row">
                                         <div class="col-md-1 col-3">
-                                       <img  id="upcoming_icon" src="<?php echo base_url()?>assets/images/student_portal_icon/Group 59.png">
+                                       <img id="upcoming_icon" src="<?php echo base_url();?>/assets/images/student_portal_icon/Group 59.png">
                                    </div>
                                     <div class="col-md-7 col-7" style="padding-left: 30px; ">
-                                    <span  id="upcoming_session" style="font-weight: 500;
+                                    <span id="upcoming_session" style="font-weight: 500;
                                                     font-size: 17px;
                                                     display: block;
                                                     font-family: 'Poppins' !important;
                                                     color: #5A5858;
                                                     ">
-                                        Session : <?php echo $data['session_name']; ?></span>
+                                        Session : <?php echo $offline_value['session_name'];?></span>
                                     <span id="upcoming_course" style="color: #949393;font-size:15px;">Course: <?php echo $course_name;?></span><br>
-                                    <span id="upcoming_start_at" style="color: #949393;font-size:13px;"> Starts at: <?php  $mydate=getdate($data['session_date']); echo "$mydate[month] $mydate[mday]"?></span>
+                                    <span id="upcoming_start_at" style="color: #949393;font-size:13px;"> Starts at: 
+
+
+                                       <?php echo $offline_value['offline_session_date'];?></span>
                                    </div>
                                     <div class="col-md-2 col-2">
-                                       <a id="completed_open_dropdown_icon" href="#myCollapse<?php echo  $com;?>" data-toggle="collapse" style="font-size:24px;color:gray;margin-left: 20px;" data-target="#myCollapse<?php echo $com;?>">
-                                                <i class="fas fa-angle-down" ></i>
+                                       <a id="completed_open_dropdown_icon" href="#myCollapse" data-toggle="collapse" style="font-size:24px;color:gray;margin-left: 20px;" data-target="#myCollapse">
+                                                <i class="fas fa-angle-down" aria-hidden="true"></i>
                                         </a>
                                    </div>
 
                                   </div>
                                     <div class="row">
-                                  <div class="collapse" id="myCollapse<?php echo $com;?>" style="margin-top: -10px !important; margin-left: 100px;">
+                                  <div class="collapse" id="myCollapse" style="margin-top: -10px !important; margin-left: 100px;">
                                          <div class="col-md-2 col-3">
                                          </div>
                                          <div class="col-md-7 col-7" style="margin-left:-47px;margin-top: 20px; ">
@@ -123,59 +122,52 @@
                                   </div>
                                  </div>
                                     <ul class="nav">
-                                       <li class="nav-item" style="cursor:pointer;"  
-                                          data-toggle="modal"
-                                          data-target="#reading_material_list"
-                                          <?php
-                                             $query100 = "SELECT * FROM `offline_session` WHERE `id` = $session_id;";
-                                             print_r($query100);
-                                             $runfetch100 = mysqli_query($con, $query100);
-                                             $noofrow100 = mysqli_num_rows($runfetch100);
-                                             $indexnumber100 = 1;
-                                             if ($noofrow100 >0 && $runfetch100 == TRUE) { 
-                                                while ($data100 = mysqli_fetch_assoc($runfetch100)) { 
-                                                   $reading_material = $data100['reading_material']; 
-                                                   $reading_material_array = explode (",", $reading_material);  
-                                                   $no_of_reading_material =  sizeof($reading_material_array);
-                                                }
-                                             }
-                                             ?>
-                                          onclick= "prepareReadingMaterialListModal(
-                                          <?php                                                                  
-                                             for($i= 0; $i < $no_of_reading_material-1; $i++){
-                                                 
-                                                 $anz_material_id = $reading_material_array[$i];
-                                                 $query1000 = "SELECT * FROM material WHERE id = $anz_material_id";
-                                                $runfetch1000 = mysqli_query($con, $query1000);
-                                                $noofrow1000 = mysqli_num_rows($runfetch1000);
-                                                
-                                                
-                                                if ($noofrow1000 >0 && $runfetch1000 == TRUE) { 
-                                                   while ($data1000 = mysqli_fetch_assoc($runfetch1000)) { 
-                                                      echo "'".$data1000['topic_name']."'," ;
-                                                   }}
-                                                   echo $reading_material_array[$i];
-                                                 if($i != $no_of_reading_material - 2){
-                                                    echo ',';                                                                 
-                                                }
-                                                }
-                                                ?>
-                                          )"
-                                          >
-                                          <button class="upcoming_mobilein_hide" id="activity_button"  style="width:160px;margin-left: 85px;"><img src="<?php echo base_url()?>assets/images/student_portal_icon/reading-material.png">&nbsp;&nbsp;
+  <?php
+                              if(!empty($offline_value['offline_reding_material_data']))
+                              {
+
+                                 $reding_matrerial_data = $offline_value['offline_reding_material_data'];
+                                 $reding_matrerial_string = '';
+                                 foreach ($reding_matrerial_data as $key => $redingvalue) {
+                                 // print_r($redingvalue);
+                                    $reding_matrerial_string .= "'".$redingvalue->topic_name."'".",'".$redingvalue->id."',";
+                                 // code...
+                                 }
+                                 ?>
+                                 <li class="nav-item" style="cursor:pointer;" data-toggle="modal" data-target="#reading_material_list"  onclick="prepareReadingMaterialListModal(<?php echo $reding_matrerial_string;?>)">
+                                 <button class="upcoming_mobilein_hide" id="activity_button" style="width:160px;margin-left: 85px;"><img src="<?php echo base_url();?>assets/images/student_portal_icon/reading-material.png">&nbsp;&nbsp;
                                     Reading Material &nbsp;&nbsp;
-                                          </button>
-                                           <hr>
-                                           </li>
+                                 </button>
+                                 <hr>
+                              </li>
+                              <?php 
+                           }
+                              else
+                              {
+                                 ?>
+                                 <li class="nav-item" >
+                                    <button class="upcoming_mobilein_hide" id="activity_button" style="background-color: #707070 !important; width:160px;margin-left: 85px;"><img src="<?php echo base_url();?>assets/images/student_portal_icon/reading-material.png">&nbsp;&nbsp;
+                                       Reading Material &nbsp;&nbsp;
+                                    </button>
+                                    <hr>
+                                 </li>
+                                 <?php 
+                              }
+                              ?>
+
                                     </ul>
                                  </div>
-                                
+<?php 
+   }
+?>
+     
+
+
+<!-- Ci Code end -->
+
                                  <?php
-                                    }else{
-                                    }
-                                    }}else{
-                                    }
-                                    
+                                    include('dbcon.php');
+                        
                                     ?>
                               </div>
                            </div>
@@ -189,234 +181,154 @@
                      <div class="card height-equal" >
                         <div class="card-body">
                            <div class="upcoming-event">
-                              <?php
-                                 $query = "SELECT * FROM `offline_session_log` WHERE `is_completed` = 1 ";                                            
-                                 $runfetch = mysqli_query($con, $query);                       
-                                 $noofrow = mysqli_num_rows($runfetch);       
-                                
-                                 if ($noofrow > 0 && $runfetch == TRUE) { 
-                                  
-                                   while ($data = mysqli_fetch_assoc($runfetch)) {
+                              
+                              <!-- Ci Code  Start completed_session_data Start-->
 
-                                     $session_id = $data['session_id'];
-                                 $query10 = "SELECT * FROM `offline_session` WHERE `id` = $session_id  AND `is_deleted` = 0;";                                            
-                                 $runfetch10 = mysqli_query($con, $query10);                       
-                                 $noofrow10 = mysqli_num_rows($runfetch10);       
-                                  
-                                 if ($noofrow10 > 0 && $runfetch10 == TRUE) { 
-                                  $com=1;
-                                   while ($data10 = mysqli_fetch_assoc($runfetch10)) {
-                                    if($data10['batch_Id'] == $batch_id){
-                                 ?>
-                                 <div class="row">
-                                   <div class="col-md-1  col-3">
-                                    <img  id="completed_icon" src="<?php echo base_url()?>assets/images/student_portal_icon/Group 59.png" >
-                                   </div>
-                                    <div class="col-md-7 col-7" style="padding-left: 30px; ">
-                                      <span id="completed_session" 
-                                             style="font-weight: 500;
-                                                    font-size: 17px;
-                                                    display: block;
-                                                    font-family: 'Poppins' !important;
-                                                    color: #5A5858;
-                                                    ">   
-                                            Offline : <?php echo $data10['session_name']; ?>
-                                       </span>
-                                       <span id="completed_starts_at"  style="color: #949393;font-size:15px">
-                                            Starts at: <?php echo "$mydate[month] $mydate[mday]"?></span>
-                                         <br>
-                                       <span id="completed_course"  style="color: #949393;font-size:13px;">
-                                       Course:<?php echo  $course_name;
-                                          ?></span>
-                                       </div>
-                                    <div class="col-md-2 col-2">
-                                       <a id="completed_open_dropdown_icon" href="#myCollapse<?php echo  $com;?>" data-toggle="collapse" style="font-size:24px;color:gray;margin-left: 20px;" data-target="#myCollapse<?php echo $com;?>">
-                                                <i class="fas fa-angle-down" ></i>
-                                        </a>
-                                   </div>
 
-                                 </div>
-                                 <div class="row">
-                                  <div class="collapse" id="myCollapse<?php echo $com;?>" style="margin-top: -10px !important; margin-left: 100px;">
-                                         <div class="col-md-2 col-3">
-                                         </div>
-                                         <div class="col-md-7 col-7" style="margin-left:-47px;margin-top: 20px; ">
-                                             <a>Reading Material</a>
-                                             <hr style="max-width:250px">
-                                             <a>Reading Material</a>
-                                             <hr style="max-width:250px">
-                                             <a>Reading Material</a>
-                                             
-                                         </div>
+<?php 
+if(!empty($completed_session_data['completed_session_data']))
+{
+foreach ($completed_session_data['completed_session_data'] as $key => $complate_value) {
+   ?>
 
-                                  </div>
-                                 </div>
-                             
-                              <ul class="nav "
-                                  >
-                                 <li class="nav-item" style="cursor:pointer;"  
-                                    data-toggle="modal"
-                                    data-target="#reading_material_list"
-                                    <?php
-                                       $query100 = "SELECT * FROM `offline_session` WHERE `id` = $session_id;";
-                                       $runfetch100 = mysqli_query($con, $query100);
-                                       $noofrow100 = mysqli_num_rows($runfetch100);
-                                       $indexnumber100 = 1;
-                                       
-                                       if ($noofrow100 >0 && $runfetch100 == TRUE) { 
-                                          while ($data100 = mysqli_fetch_assoc($runfetch100)) { 
-                                             // use of explode 
-                                             $reading_material = $data100['reading_material']; 
-                                             $reading_material_array = explode (",", $reading_material);  
-                                             $no_of_reading_material =  sizeof($reading_material_array);
-                                          }
-                                       }
-                                            
-                                       ?>
-                                    onclick= "prepareReadingMaterialListModal(
-                                    <?php                                                                  
-                                       for($i= 0; $i < $no_of_reading_material-1; $i++){
-                                           
-                                           $anz_material_id = $reading_material_array[$i];
-                                           $query1000 = "SELECT * FROM `material` WHERE `id` = $anz_material_id;";
-                                          $runfetch1000 = mysqli_query($con, $query1000);
-                                          $noofrow1000 = mysqli_num_rows($runfetch1000);
-                                          
-                                          
-                                          if ($noofrow1000 >0 && $runfetch1000 == TRUE) { 
-                                             while ($data1000 = mysqli_fetch_assoc($runfetch1000)) { 
-                                                echo "'".$data1000['topic_name']."'," ;
-                                             }}
-                                             echo $reading_material_array[$i];
-                                           if($i != $no_of_reading_material - 2){
-                                              echo ',';                                                                 
-                                              }
-                                          
-                                          }
+                              <div class="row">
+                               <div class="col-md-1  col-3">
+                                 <img id="completed_icon" src="<?php echo base_url();?>assets/images/student_portal_icon/Group 59.png">
+                              </div>
+                              <div class="col-md-7 col-7" style="padding-left: 30px; ">
+                               <span id="completed_session" style="font-weight: 500;
+                               font-size: 17px;
+                               display: block;
+                               font-family: 'Poppins' !important;
+                               color: #5A5858;
+                               ">   
+                            Offline : <?php echo $complate_value['session_name'];?></span>
+                            <span id="completed_starts_at" style="color: #949393;font-size:15px">
+                            Starts at: <?php echo $complate_value['completed_session_date'];?> </span>
+                            <br>
+                            <span id="completed_course" style="color: #949393;font-size:13px;">
+                            Course:<?php echo $course_name;?></span>
+                         </div>
+                         <div class="col-md-2 col-2">
+                           <a id="completed_open_dropdown_icon" href="#myCollapse1" data-toggle="collapse" style="font-size:24px;color:gray;margin-left: 20px;" data-target="#myCollapse1">
+                              <i class="fas fa-angle-down" aria-hidden="true"></i>
+                           </a>
+                        </div>
 
-                                          ?>
-                                    )"
-                                    >
-                                    <button class="mobilein_hide" id="activity_button"  style="width:160px;margin-left: 85px;">
-                                    <img src="<?php echo base_url()?>assets/images/student_portal_icon/reading-material.png">&nbsp;&nbsp;
-                                    Reading Material &nbsp;&nbsp;</button>
-                                 </li>
-                                 <li class="nav-item" style="cursor:pointer;"  
-                                    data-toggle="modal"
-                                    data-target="#session_resource_list"
-                                    <?php
-                                       $query100 = "SELECT * FROM `offline_session` WHERE `id` = $session_id;";
-                                       $runfetch100 = mysqli_query($con, $query100);
-                                       $noofrow100 = mysqli_num_rows($runfetch100);
-                                       $indexnumber100 = 1;
-                                       
-                                       if ($noofrow100 >0 && $runfetch100 == TRUE) { 
-                                          while ($data100 = mysqli_fetch_assoc($runfetch100)) { 
-                                       
-                                             // use of explode 
-                                             $session_resource = $data100['session_resource']; 
-                                             $session_resource_array = explode (",", $session_resource);  
-                                             $no_of_session_resource =  sizeof($session_resource_array);
-                                             
-                                       
-                                          }
-                                       }
-                                            
-                                       ?>
-                                    onclick= "prepareSessionResourceListModal(
-                                    <?php                                                                  
-                                       for($i= 0; $i < $no_of_session_resource-1; $i++){
-                                        
-                                        $anz_material_id = $session_resource_array[$i];
-                                         $query1000 = "SELECT * FROM `material` WHERE `id` = $anz_material_id;";
-                                       $runfetch1000 = mysqli_query($con, $query1000);
-                                       $noofrow1000 = mysqli_num_rows($runfetch1000);
-                                       
-                                       
-                                       if ($noofrow1000 >0 && $runfetch1000 == TRUE) { 
-                                          while ($data1000 = mysqli_fetch_assoc($runfetch1000)) { 
-                                             echo "'".$data1000['topic_name']."', " ;
-                                          }}
-                                        echo $session_resource_array[$i];
-                                        if($i != $no_of_session_resource - 2){
-                                           echo ',';                                                                 
-                                       }
-                                       }
-                                       ?>
-                                    )"
-                                    >
-                                    &nbsp;&nbsp; <button class="mobilein_hide" id="activity_button"><img src="<?php echo base_url()?>assets/images/student_portal_icon/page.png" style="margin-left:8px;">&nbsp;&nbsp;Session Resource &nbsp;&nbsp;&nbsp;&nbsp;</button>
-                                 </li>
-                                 <?php
-                                    $query100 = "SELECT * FROM `offline_session_log` WHERE `session_id` = $session_id;";
-                                    $runfetch100 = mysqli_query($con, $query100);
-                                    $noofrow100 = mysqli_num_rows($runfetch100);
-                                    $indexnumber100 = 1;
-                                    
-                                    if ($noofrow100 >0 && $runfetch100 == TRUE) { 
-                                       while ($data100 = mysqli_fetch_assoc($runfetch100)) { 
-                                    
-                                          // use of explode 
-                                          $string1 = $data100['recording_files']; 
-                                          $str_arr1 = explode (",", $string1);  
-                                          $no_of_videos =  sizeof($str_arr1);
-                                    
-                                          $video_comment = $data100['video_comment'];
-                                          
-                                          
-                                    
-                                       }
-                                    }
-                                         
-                                    ?>
-                                 <?php 
-                                    if($no_of_videos == 1){
-                                    
-                                       ?>
-                                 <li class="nav-item" style="cursor:pointer;"  
-                                    data-toggle="modal"
-                                    data-target="#no_video_reason"
-                                    onclick= "prepareNoVideoReason(
-                                    <?php                                                                  
-                                       echo "'".$video_comment."'";
-                                       ?>
-                                    )"
-                                    >
-                                    &nbsp; &nbsp;<button class="mobilein_hide" id="activity_button"><img src="<?php echo base_url()?>assets/images/student_portal_icon/button.png" style="margin-left:8px;" ></i>&nbsp;&nbsp;Recordings &nbsp;&nbsp;&nbsp;&nbsp;</button> 
-                                 </li>
-                                 <?php
-                                    }else{
-                                       ?>
-                                 <li class="nav-item" style="cursor:pointer;"  
-                                    data-toggle="modal"
-                                    data-target="#video_list"
-                                    onclick= "prepareVideoListModal(
-                                    <?php                                                                  
-                                       for($i= 0; $i < $no_of_videos-1; $i++){
-                                        echo $session_id;
-                                        if($i != $no_of_videos - 2){
-                                           echo ',';                                                                 
-                                       }
-                                       }
-                                       ?>
-                                    )"
-                                    >
-                                    &nbsp; &nbsp;<button class="mobilein_hide" id="activity_button" ><img src="<?php echo base_url()?>assets/images/student_portal_icon/button.png" style="margin-left:8px;" ></i>&nbsp;&nbsp;Recordings &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> 
-                                 </li>
-                                
-                                 <?php
-                                   $com++; }
-                                    ?> <hr>
-                              </ul>
-                              <?php
-                                 } 
-                                 }
-                                 } 
-                                 }
-                                 }else{
-                                    }
-                                 
-                                 ?>
+                     </div>
+                     <div class="row">
+                       <div class="collapse" id="myCollapse1" style="margin-top: -10px !important; margin-left: 100px;">
+                         <div class="col-md-2 col-3">
+                         </div>
+                         <div class="col-md-7 col-7" style="margin-left:-47px;margin-top: 20px; ">
+                           <a>Reading Material</a>
+                           <hr style="max-width:250px">
+                           <a>Reading Material</a>
+                           <hr style="max-width:250px">
+                           <a>Reading Material</a>
+
+                        </div>
+
+                     </div>
+                  </div>
+                  <ul class="nav ">
+
+<!-- completed_reding_material_data start -->
+<?php 
+        if(!empty($complate_value['completed_reding_material_data']))
+         {
+
+            $reding_matrerial_data = $complate_value['completed_reding_material_data'];
+            
+            $reding_matrerial_string = '';
+            foreach ($reding_matrerial_data as $key => $redingvalue) {
+            // print_r($redingvalue);
+               $reding_matrerial_string .= "'".$redingvalue->topic_name."'".",'".$redingvalue->id."',";
+            }
+            ?>
+
+                     <li class="nav-item" style="cursor:pointer;" data-toggle="modal" data-target="#reading_material_list" onclick="prepareReadingMaterialListModal(<?php echo $reding_matrerial_string;?>)">
+                     <button class="mobilein_hide" id="activity_button" style="width:160px;margin-left: 85px;">
+                        <img src="<?php echo base_url();?>assets/images/student_portal_icon/reading-material.png">&nbsp;&nbsp;
+                     Reading Material &nbsp;&nbsp;</button>
+                  </li>
+                  <?php 
+               }
+               else
+               {?>
+                    <li class="nav-item">
+                     <button class="mobilein_hide" title="Reading material not found" id="activity_button" style="width:160px;margin-left: 85px;background-color: #707070 !important;">
+                        <img src="<?php echo base_url();?>assets/images/student_portal_icon/reading-material.png">&nbsp;&nbsp;
+                     Reading Material &nbsp;&nbsp;</button>
+                  </li>
+                     <?php
+               }
+               ?>
+
+
+
+<!-- completed_reding_material_data End-->
+<!-- Session Resources start-->
+
+
+            <?php if(!empty($complate_value['completed_session_resource_data']))
+            {
+             $reding_matrerial_data = $complate_value['completed_session_resource_data'];
+             if(!empty($reding_matrerial_data))
+             {
+
+               $reding_matrerial_string = '';
+               foreach ($reding_matrerial_data as $key => $redingvalue) {
+                        // print_r($redingvalue);
+                  $reding_matrerial_string .= "'".$redingvalue->topic_name."'".",'".$redingvalue->id."',";
+               }
+               ?>
+               <li class="nav-item" style="cursor:pointer;" data-toggle="modal" data-target="#session_resource_list" onclick="prepareSessionResourceListModal(<?php echo $reding_matrerial_string;?>)">
+                  &nbsp;&nbsp; <button class="mobilein_hide" id="activity_button"><img src="<?php echo base_url();?>assets/images/student_portal_icon/page.png" style="margin-left:8px;">&nbsp;&nbsp;Session Resource &nbsp;&nbsp;&nbsp;&nbsp;</button>
+               </li>
+               <?php 
+            }
+
+            }
+            else
+            { ?>
+               <li class="nav-item">
+                  &nbsp;&nbsp; <button class="mobilein_hide" id="activity_button"    title="Session resource not found"  style="background-color: #707070 !important;"><img src="<?php echo base_url();?>assets/images/student_portal_icon/page.png" style="margin-left:8px;">&nbsp;&nbsp;Session Resource &nbsp;&nbsp;&nbsp;&nbsp;</button>
+               </li>
+            <?php } ?>
+
+<!-- Session Resources End -->
+<?php if(!empty($complate_value['complate_video_recording_files_count']))
+            {
+             $video_recording_file_Count = $complate_value['complate_video_recording_files_count'];
+             if(!empty($video_recording_file_Count))
+             {?>
+
+               <li class="nav-item" style="cursor:pointer;" data-toggle="modal" data-target="#video_list" onclick="prepareVideoListModal(<?php echo $video_recording_file_Count;?>)">
+               &nbsp; &nbsp;<button class="mobilein_hide" id="activity_button"><img src="<?php echo base_url();?>assets/images/student_portal_icon/button.png" style="margin-left:8px;">&nbsp;&nbsp;Recordings &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> 
+            </li>
+         <?php
+          }
+       }
+       else
+       {?>
+  <li class="nav-item" style="cursor:none;" >
+               &nbsp; &nbsp;<button class="mobilein_hide" id="activity_button" title="Recordings not found"  style="background-color: #707070 !important;"><img src="<?php echo base_url();?>assets/images/student_portal_icon/button.png" style="margin-left:8px;">&nbsp;&nbsp;Recordings &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> 
+            </li>
+       <?php 
+    }
+         ?>
+
+            <hr>
+         </ul>
+    <?php 
+       }
+} ?>
+
+                              <!-- Ci Code  Start completed_session_data End-->
+
+                              
+
                            </div>
                         </div>
                      </div>
@@ -431,19 +343,19 @@
                <div class="card-body mobile_assignment"  >
                   <div class="row" >
                      <div class="col-lg-4 col-md-4 col-4" style="color:#5A5858;font-size:14px;font-family: 'Poppins' !important;text-align: center;display: grid;text-align: center;font-weight: 500;">
-                        <span>Assignment</span>
-                        <span>1</span>
+                        <span>Assignment <i class="fa fa-info-circle" title="Out of 100 Assignment To 20" style="font-size:14px"></i></span>
+                        <span>20</span>
                      </div>
                      <div class="col-lg-4  col-md-4 col-4" style="color:#5A5858;font-size:14px;font-family: 'Poppins' !important;text-align: center;display: grid;text-align: center;font-weight: 500;">
-                        <span>Project</span>
-                        <span>1</span>
+                        <span>Project <i class="fa fa-info-circle" title="Out of 150 Project To 50" style="font-size:14px"></i></span>
+                        <span>50</span>
                      </div>
                      <div class="col-lg-4 col-md-4 col-4"  style="color:#5A5858;font-size:14px;font-family: 'Poppins' !important;text-align: center;display: grid;text-align: center;font-weight: 500;">
-                        <span>Case Study</span>
-                        <span>1</span>
-                        <div class="col-12">
+                        <span>Case Study <i class="fa fa-info-circle" title="Out of 10 Case Study To 8" style="font-size:14px"></i></span>
+                        <span>8</span>
+                        <!-- <div class="col-12">
                            <span style="font-size: 16px;color:#26266c;">  View More</span>  
-                        </div>
+                        </div> -->
                      </div>
                   </div>
                </div>
