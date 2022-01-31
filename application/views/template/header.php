@@ -21,7 +21,8 @@
       <link rel="stylesheet" href="<?php echo base_url()?>program_assets/mastercss/design.css">
       <script type="text/javascript" src="<?php echo base_url()?>program_assets/masterjs/jquery-1.11.0.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-collapse.js"></script>
-       <link rel = "stylesheet" href = "<?php echo base_url()?>assets/css/bootstrap.min.css"/>    
+       <link rel = "stylesheet" href = "<?php echo base_url()?>assets/css/bootstrap.min.css"/> 
+       
       <style type="text/css">
          body{
          font-family: 'Poppins', sans-serif;
@@ -65,6 +66,16 @@
          color: white !important;
          width: 204px;
          }
+         a#menu_support.nav-link.menu-active {
+         box-shadow: 4px -0.4px 1px -0.5px #e46f0e, 2px 1px 2px 3px rgb(0 0 0 / 10%) !important;
+         color: white !important;
+         width: 204px;
+         }
+         .menu-active-support{
+            color:#000000 !important;
+            background-color: red !important;
+         }
+
          .navbar-nav .nav-item .icon :hover {
            fill: rgb(228, 111, 14);
          }
@@ -590,8 +601,7 @@
          {
           font-size: 8px !important;
           font-weight: 500;
-          margin-left: -10px;
-
+        
         }
          .header_text2
          {

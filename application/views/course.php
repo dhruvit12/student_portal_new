@@ -4,56 +4,22 @@
  document.getElementById('menu_course').classList.add("menu-active");
  document.getElementById('sidebar_icon_2').style.fill='#E46F0E';
 
-
 </script>
-
 <style type="text/css">
-
 .fa-unlock{
 	color: #5e5a5a !important;  
 }
-	
 img.card-img-top {
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
     border-radius: 40px;
 }
-
 .access_course
 {
 background: transparent;opacity: 70%;
 } 
-
-.Live_Course_tab
-{
-	width: 160px;
-	height: 60px;
-	border: none;
-	background: #ffffff;
-    border-radius: 15px;
-    transition: 0.9s;
-    box-shadow: 0.2px 3px 3px #808080;
-    border-color: #707070;
-    border-bottom: orange;
-    opacity: 100%;
-}
-
-
-.Live_Course_tab
-{
-	width: 160px;
-	height: 60px;
-	border: none;
-	background: #ffffff;
-    border-radius: 15px;
-    transition: 0.9s;
-    box-shadow: 0.2px 3px 3px #808080;
-    border-color: #707070;
-    border-bottom: orange;
-    opacity: 100%;
-}
 .Self_Paced_Course_tab
 {
-	width: 160px;
+	width: 200px;
 	height: 60px;
 	border: none;
 	background: #ffffff;
@@ -63,19 +29,21 @@ background: transparent;opacity: 70%;
     border-color: #707070;
     border-bottom: orange;
     opacity: 100%;
+
 }
 button#defaultOpen {
     /*color: white;*/
-    width: 160px;
-	height: 60px;
-	border: none;
-	background: gray;
+    width: 200px;
+	  height: 60px;
+	  border: none;
+	  background: gray;
     border-radius: 15px;
     transition: 0.9s;
     box-shadow: 0.2px 3px 3px #808080;
     border-color: #707070;
     border-bottom: orange;
     opacity: 100%;
+
 }
 button.tablink.Self_Paced_Course_tab {
     background: #808080;
@@ -88,8 +56,8 @@ button.tablink.Self_Paced_Course_tab {
      <div class="row  mt-3" >
      <div class="col-lg-12 ">
 
-<button class="tablink Live_Course_tab" id="defaultOpen" style="margin-right: -11px; z-index: 2147483647; position: sticky; box-shadow: rgb(128, 128, 128) 0.2px 3px 11px;" onclick="openPage('Live_Course', this, '#ffffff')">Live Course</button>
-<button class="tablink Self_Paced_Course_tab" style="margin-right: -11px; z-index: 2147483647; position: sticky; box-shadow: rgb(128, 128, 128) 0.2px 3px 11px;" onclick="openPage('Self_Paced_Course', this, '#ffffff')" >Self PacedCourse</button>
+<button class="tablink Live_Course_tab" id="defaultOpen" style="margin-right: 0px;  box-shadow: rgb(128, 128, 128) 0.2px 3px 11px;font-size:18px;" onclick="openPage('Live_Course', this, '#ffffff')">Live Course</button>
+<button class="tablink Self_Paced_Course_tab" style="margin-left: -20px;font-size:18px;  box-shadow: rgb(128, 128, 128) 0.2px 3px 11px;" onclick="openPage('Self_Paced_Course', this, '#ffffff')" >Self PacedCourse</button>
 
 <!-- <div id="Live_Course"  class="tabcontent ">
   <h3>Live_Course</h3>

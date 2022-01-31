@@ -11,7 +11,7 @@
       </a>
     </div>
     <div class="sidenav-header1">
-     <a class="navbar-brand m-0" href="<?php echo base_url()?>dashboard">
+     <a class="navbar-brand m-0" href="<?php echo base_url()?>profile">
         <img src="<?php echo base_url();?>assets/images/student_portal_icon/profile.png" class="navbar-brand-img h-100 user_profile_image" alt="main_logo" style="width:150px;height: 150px;margin-left: 20PX;">
       </a>
     </div>
@@ -76,7 +76,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="<?php echo base_url();?>support" style="font-weight: 500;">
+          <a  class="nav-link text-white " href="<?php echo base_url();?>support" style="font-weight: 500;">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
              <i class="fa fa-support"  class="icon" id="sidebar_icon_6" style="font-size: 22px;margin-bottom:5px;"></i>
             </div>

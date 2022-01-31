@@ -469,7 +469,7 @@
                               <!-- Modal Header -->
                               <div class="modal-header">
                                  <h4 class="modal-title">Assignments Resources</h4>
-                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             
                               </div>
                               <!-- Modal body -->
                               <div class="modal-body text-center" style="overflow-x:auto;">
@@ -486,7 +486,7 @@
                               </div>
                               <!-- Modal footer -->
                               <div class="modal-footer">
-                                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                               <button type="button" class="btn btn-default" style="background-color:#26266C;color:#ffffff" data-dismiss="modal">Close</button>
                               </div>
                            </div>
                         </div>
