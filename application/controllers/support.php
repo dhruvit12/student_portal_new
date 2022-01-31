@@ -11,7 +11,9 @@ class Support extends CI_Controller {
 	}
 	function index()
 	{
-		$this->load->view('header');
+		// $this->load->view('template/header');
+		$this->load->view('template/top_header');
+	
 		// $this->load->view('support');
 		$this->db->where('id',$_SESSION['ftip69_uid']);
 		$data['student_id']=$this->db->get('user2')->result();
@@ -68,7 +70,29 @@ class Support extends CI_Controller {
 		}
 	        	 $this->load->view('support',$data);
 
+	 }
+	 public function add_assistance()
+	 {
+	 	// print_r($_SESSION['ftip69_uid']);exit;
+	 	 $data = [
+            'student_id' =>$_SESSION['ftip69_uid'] ,
+            'category' => $this->input->post('category'),
+            'priority' =>$this->input->post('priority'),
+            'comment' => $this->input->post('comment'),
+         ];
+        $success=$this->db->insert('support', $data); 
+        if($success)
+        {
+        	$this->session->set_flashdata('success', 'Data Uploaded Successfully!');
+        	 redirect('support');
+        }
+        else
+        {
+        	 $this->session->set_flashdata('success', 'Data Upload Failed!');
+        	 redirect('support');
+    
+        }
+     }
 	}
-	
 
 ?>

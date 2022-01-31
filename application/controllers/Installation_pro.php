@@ -13,7 +13,7 @@ class Installation_pro extends CI_Controller {
 	{
 		  // $this->db->where('course_id',$id);
 		// $data['installation_tips_data']=$this->db->get('fingertips_intallation_tips')->result();
-			$this->load->view('header');
+			$this->load->view('template/top_header');
 		    $this->load->view('installation_tips/data_science_pro');
 	}
 }

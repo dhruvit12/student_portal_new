@@ -25,6 +25,8 @@ class Course extends CI_Controller {
 		$data['live_course_data'] = $this->db->where('course_id',$student_course_id)->where('is_deleted',0)->where('type',1)->order_by('id','asc')->get('tbl_sub_course')->result();
 		$data['self_course_data'] = $this->db->where('course_id',$student_course_id)->where('is_deleted',0)->where('type',2)->order_by('id','asc')->get('tbl_sub_course')->result();
 
+		$this->load->view('template/header');
+		$this->load->view('template/sidebar');
 		$this->load->view('course',$data);
 		$this->load->view('template/footer');
 
